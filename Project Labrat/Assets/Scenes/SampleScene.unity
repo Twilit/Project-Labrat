@@ -408,3 +408,79 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2050145351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2050145353}
+  - component: {fileID: 2050145352}
+  m_Layer: 0
+  m_Name: Tile Templates
+  m_TagString: Tiles
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2050145352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2050145351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0ad75c5d10b7af4080d3f66c24dcfcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  northTiles:
+  - {fileID: 1242057108457544, guid: 9424d7ca809129f45b9772ad51cb38ac, type: 2}
+  - {fileID: 1614881297238044, guid: 75c51ede487de214a8d4fab956a0740d, type: 2}
+  - {fileID: 1173328503635520, guid: e53e7e7fd34de1e4ebf30be9379152bc, type: 2}
+  - {fileID: 1486439414117584, guid: e6a1fb0a8d53aec41af93e8250ce177a, type: 2}
+  - {fileID: 1216046774152340, guid: d7a0685d32b37914e8bafa459d7d8b45, type: 2}
+  - {fileID: 1415430037255286, guid: c0932958f4d500446bc8b341893e183e, type: 2}
+  - {fileID: 1531267983236796, guid: 2d8067287439ad04c9ecce1386b7d327, type: 2}
+  - {fileID: 1781677880937084, guid: efbc8cd069e4c104ebdbd911beb87924, type: 2}
+  eastTiles:
+  - {fileID: 1109355081621204, guid: 4a6213c288bffbf40b808cff13b5bd64, type: 2}
+  - {fileID: 1669875142409876, guid: 0e476b1fa0f176a45a2791fce59c42e8, type: 2}
+  - {fileID: 1846247619964766, guid: 1ee3f8b9dc94aa54bbf651c1d5c1d61b, type: 2}
+  - {fileID: 1631242396098404, guid: 70c95cd6e31d0b544bf73a061b055e01, type: 2}
+  - {fileID: 1486439414117584, guid: e6a1fb0a8d53aec41af93e8250ce177a, type: 2}
+  - {fileID: 1216046774152340, guid: d7a0685d32b37914e8bafa459d7d8b45, type: 2}
+  - {fileID: 1531267983236796, guid: 2d8067287439ad04c9ecce1386b7d327, type: 2}
+  - {fileID: 1781677880937084, guid: efbc8cd069e4c104ebdbd911beb87924, type: 2}
+  southTiles:
+  - {fileID: 1422656037851088, guid: c9129a4baa529a7438680e390853ed38, type: 2}
+  - {fileID: 1411023677603962, guid: 2a3b7bc43083f864e89122b37260c9d3, type: 2}
+  - {fileID: 1109355081621204, guid: 4a6213c288bffbf40b808cff13b5bd64, type: 2}
+  - {fileID: 1669875142409876, guid: 0e476b1fa0f176a45a2791fce59c42e8, type: 2}
+  - {fileID: 1614881297238044, guid: 75c51ede487de214a8d4fab956a0740d, type: 2}
+  - {fileID: 1173328503635520, guid: e53e7e7fd34de1e4ebf30be9379152bc, type: 2}
+  - {fileID: 1486439414117584, guid: e6a1fb0a8d53aec41af93e8250ce177a, type: 2}
+  - {fileID: 1216046774152340, guid: d7a0685d32b37914e8bafa459d7d8b45, type: 2}
+  westTiles:
+  - {fileID: 1411023677603962, guid: 2a3b7bc43083f864e89122b37260c9d3, type: 2}
+  - {fileID: 1109355081621204, guid: 4a6213c288bffbf40b808cff13b5bd64, type: 2}
+  - {fileID: 1155383961693822, guid: 6ea0c08ef1086d341a83476e960542e9, type: 2}
+  - {fileID: 1846247619964766, guid: 1ee3f8b9dc94aa54bbf651c1d5c1d61b, type: 2}
+  - {fileID: 1173328503635520, guid: e53e7e7fd34de1e4ebf30be9379152bc, type: 2}
+  - {fileID: 1486439414117584, guid: e6a1fb0a8d53aec41af93e8250ce177a, type: 2}
+  - {fileID: 1415430037255286, guid: c0932958f4d500446bc8b341893e183e, type: 2}
+  - {fileID: 1531267983236796, guid: 2d8067287439ad04c9ecce1386b7d327, type: 2}
+--- !u!4 &2050145353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2050145351}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.81256104, y: 1.4189453, z: -0.96484375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
