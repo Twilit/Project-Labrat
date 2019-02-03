@@ -62,7 +62,6 @@ public class TileSpawner : MonoBehaviour
                     westTile.transform.localScale = Vector3.one;
                     break;
             }
-
             spawned = true;
         }
 	}
