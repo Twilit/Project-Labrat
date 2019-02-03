@@ -8,12 +8,14 @@ public class TileSpawner : MonoBehaviour
     public OpeningDirection needOpening;
     public bool spawned = false;
 
+    GameObject map;
     TileTemplates templates;
     int rand;
 
     void Start ()
     {
         templates = GameObject.FindGameObjectWithTag("Tiles").GetComponent<TileTemplates>();
+        map = GameObject.FindGameObjectWithTag("Map");
         Invoke("Spawn", 0.1f);
 	}
 	
@@ -26,25 +28,38 @@ public class TileSpawner : MonoBehaviour
                 case OpeningDirection.North:
                     // Spawns tile with an northern opening
                     rand = Random.Range(0, templates.northTiles.Length);
-                    Instantiate(templates.northTiles[rand], transform.position, templates.northTiles[rand].transform.rotation);
+                    GameObject northTile = Instantiate(templates.northTiles[rand], transform.position, templates.northTiles[rand].transform.rotation);
+
+                    northTile.transform.parent = map.transform;
+                    northTile.transform.localScale = Vector3.one;
+
                     break;
 
                 case OpeningDirection.East:
                     // Spawns tile with an eastern opening
                     rand = Random.Range(0, templates.eastTiles.Length);
-                    Instantiate(templates.eastTiles[rand], transform.position, templates.eastTiles[rand].transform.rotation);
+                    GameObject eastTile = Instantiate(templates.eastTiles[rand], transform.position, templates.eastTiles[rand].transform.rotation);
+
+                    eastTile.transform.parent = map.transform;
+                    eastTile.transform.localScale = Vector3.one;
                     break;
 
                 case OpeningDirection.South:
                     // Spawns tile with an southern opening
                     rand = Random.Range(0, templates.southTiles.Length);
-                    Instantiate(templates.southTiles[rand], transform.position, templates.southTiles[rand].transform.rotation);
+                    GameObject southTile = Instantiate(templates.southTiles[rand], transform.position, templates.southTiles[rand].transform.rotation);
+
+                    southTile.transform.parent = map.transform;
+                    southTile.transform.localScale = Vector3.one;
                     break;
 
                 case OpeningDirection.West:
                     // Spawns tile with an western opening
                     rand = Random.Range(0, templates.westTiles.Length);
-                    Instantiate(templates.westTiles[rand], transform.position, templates.westTiles[rand].transform.rotation);
+                    GameObject westTile = Instantiate(templates.westTiles[rand], transform.position, templates.westTiles[rand].transform.rotation);
+
+                    westTile.transform.parent = map.transform;
+                    westTile.transform.localScale = Vector3.one;
                     break;
             }
 
