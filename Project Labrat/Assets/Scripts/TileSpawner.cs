@@ -69,9 +69,20 @@ public class TileSpawner : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("SpawnPoint") && other.GetComponent<TileSpawner>().spawned == true)
+        if (other.CompareTag("SpawnPoint"))
         {
-            Destroy(gameObject);
+            if (other.GetComponent<TileSpawner>().spawned == false && spawned == false)
+            {
+                // spawn walls blocking openings
+                GameObject closedTile = Instantiate(templates.closedTile, transform.position, Quaternion.identity);
+
+                closedTile.transform.parent = map.transform;
+                closedTile.transform.localScale = Vector3.one;
+
+                Destroy(gameObject);
+            }
+
+            spawned = true;
         }
     }
 }

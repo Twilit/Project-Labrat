@@ -8,4 +8,6 @@ public class TileTemplates : MonoBehaviour
     public GameObject[] eastTiles;
     public GameObject[] southTiles;
     public GameObject[] westTiles;
+
+    public GameObject closedTile;
 }

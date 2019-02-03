@@ -332,6 +332,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &911910376
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 365673515}
+    m_Modifications:
+    - target: {fileID: 4837686382779970, guid: 0a4a5c704b82803489d6cd87e0617deb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837686382779970, guid: 0a4a5c704b82803489d6cd87e0617deb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837686382779970, guid: 0a4a5c704b82803489d6cd87e0617deb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837686382779970, guid: 0a4a5c704b82803489d6cd87e0617deb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837686382779970, guid: 0a4a5c704b82803489d6cd87e0617deb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837686382779970, guid: 0a4a5c704b82803489d6cd87e0617deb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837686382779970, guid: 0a4a5c704b82803489d6cd87e0617deb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4837686382779970, guid: 0a4a5c704b82803489d6cd87e0617deb, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a4a5c704b82803489d6cd87e0617deb, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1534951777
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,6 +513,7 @@ MonoBehaviour:
   - {fileID: 1486439414117584, guid: e6a1fb0a8d53aec41af93e8250ce177a, type: 2}
   - {fileID: 1415430037255286, guid: c0932958f4d500446bc8b341893e183e, type: 2}
   - {fileID: 1531267983236796, guid: 2d8067287439ad04c9ecce1386b7d327, type: 2}
+  closedTile: {fileID: 1190251821797430, guid: 75f5bd3ec3294c24194786c008eb35ab, type: 2}
 --- !u!4 &2050145353
 Transform:
   m_ObjectHideFlags: 0
