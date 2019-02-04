@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4703609763396524}
   m_Layer: 0
   m_Name: Closed
-  m_TagString: Untagged
+  m_TagString: Closed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 64546506252409502}
   m_Layer: 0
   m_Name: Tile
-  m_TagString: Untagged
+  m_TagString: Closed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

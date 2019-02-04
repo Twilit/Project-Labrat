@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "SpawnPoint")
+        if (other.tag == "SpawnPoint" || other.tag == "Closed")
         {
             Destroy(other.gameObject);
         }        
