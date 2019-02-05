@@ -10,4 +10,22 @@ public class TileTemplates : MonoBehaviour
     public GameObject[] westTiles;
 
     public GameObject closedTile;
+
+    public List<GameObject> tiles;
+
+    public float waitTime;
+    public GameObject exit;
+    bool spawnedExit;
+
+    void Update()
+    {
+        if (waitTime <= 0)
+        {
+
+        }
+        else
+        {
+            waitTime -= Time.deltaTime;
+        }
+    }
 }

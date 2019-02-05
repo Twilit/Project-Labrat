@@ -8,14 +8,18 @@ public class TileSpawner : MonoBehaviour
     public OpeningDirection needOpening;
     public bool spawned = false;
 
-    GameObject map;
     TileTemplates templates;
+    GameObject map;
+    GameObject movePoint;
+
     int rand;
 
     void Start ()
     {
         templates = GameObject.FindGameObjectWithTag("Tiles").GetComponent<TileTemplates>();
         map = GameObject.FindGameObjectWithTag("Map");
+        movePoint = transform.parent.GetChild(0).gameObject;
+
         Invoke("Spawn", 0.1f);
 	}
 	
@@ -33,6 +37,8 @@ public class TileSpawner : MonoBehaviour
                     northTile.transform.parent = map.transform;
                     northTile.transform.localScale = Vector3.one;
 
+                    movePoint.GetComponent<MovePoint>().AddConnection(northTile);
+
                     break;
 
                 case OpeningDirection.East:
@@ -42,6 +48,8 @@ public class TileSpawner : MonoBehaviour
 
                     eastTile.transform.parent = map.transform;
                     eastTile.transform.localScale = Vector3.one;
+
+                    movePoint.GetComponent<MovePoint>().AddConnection(eastTile);
                     break;
 
                 case OpeningDirection.South:
@@ -51,6 +59,8 @@ public class TileSpawner : MonoBehaviour
 
                     southTile.transform.parent = map.transform;
                     southTile.transform.localScale = Vector3.one;
+
+                    movePoint.GetComponent<MovePoint>().AddConnection(southTile);
                     break;
 
                 case OpeningDirection.West:
@@ -60,6 +70,8 @@ public class TileSpawner : MonoBehaviour
 
                     westTile.transform.parent = map.transform;
                     westTile.transform.localScale = Vector3.one;
+
+                    movePoint.GetComponent<MovePoint>().AddConnection(westTile);
                     break;
             }
             spawned = true;
