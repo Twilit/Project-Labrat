@@ -29,6 +29,13 @@ public class MovePoint : MonoBehaviour
         }
     }
 
+    public void CheckConnection(GameObject selectedMovePoint, Player.Direction facing)
+    {
+        List<GameObject> otherConnectedTiles = selectedMovePoint.GetComponent<MovePoint>().connectedTiles;
+
+
+    }
+
     public void MoveOccupant(GameObject target)
     {
         try

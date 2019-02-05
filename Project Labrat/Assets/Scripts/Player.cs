@@ -8,6 +8,9 @@ public class Player : MonoBehaviour, IMoveable
     float moveSpeed = 10f;
     float turnSpeed = 15f;
 
+    public enum Direction { North, East, South, West};
+    Direction facing;
+
     [SerializeField]
     GameObject pointSensorFront;
     [SerializeField]
@@ -23,7 +26,7 @@ public class Player : MonoBehaviour, IMoveable
 
 	void Start ()
 	{
-        
+        facing = Direction.North;
 	}
 	
 	void Update ()
@@ -93,6 +96,61 @@ public class Player : MonoBehaviour, IMoveable
         }
     }
 
+    Direction UpdateDirection(Direction faceDir, float angle)
+    {
+        string turnDir = "";
+
+        if (angle == -90)
+        {
+            turnDir = "left";
+        }
+        else if (angle == 90)
+        {
+            turnDir = "right";
+        }
+
+        if (turnDir == "left")
+        {
+            if (faceDir == Direction.North)
+            {
+                faceDir = Direction.West;
+            }
+            else if (faceDir == Direction.East)
+            {
+                faceDir = Direction.North;
+            }
+            else if (faceDir == Direction.South)
+            {
+                faceDir = Direction.East;
+            }
+            else if (faceDir == Direction.West)
+            {
+                faceDir = Direction.South;
+            }
+        }
+        else if (turnDir == "right")
+        {
+            if (faceDir == Direction.North)
+            {
+                faceDir = Direction.East;
+            }
+            else if (faceDir == Direction.East)
+            {
+                faceDir = Direction.South;
+            }
+            else if (faceDir == Direction.South)
+            {
+                faceDir = Direction.West;
+            }
+            else if (faceDir == Direction.West)
+            {
+                faceDir = Direction.North;
+            }
+        }
+
+        return faceDir;
+    }
+
     IEnumerator PositionChange(Transform target)
     {
         moving = true;
@@ -128,6 +186,7 @@ public class Player : MonoBehaviour, IMoveable
 
         yield return new WaitForSeconds(0.1f);
 
+        facing = UpdateDirection(facing, angle);
         moving = false;
     }
 
