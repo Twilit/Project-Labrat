@@ -5,23 +5,29 @@ using UnityEngine;
 public class Player : MonoBehaviour, IMoveable
 {
     bool moving;
-    float moveSpeed = 3f;
+    float moveSpeed = 10f;
     float turnSpeed = 15f;
 
-    GameObject pointSensor;
-    
+    [SerializeField]
+    GameObject pointSensorFront;
+    [SerializeField]
+    GameObject pointSensorBack;
+    [SerializeField]
+    GameObject pointSensorLeft;
+    [SerializeField]
+    GameObject pointSensorRight;
+
     GameObject targetedPoint;
+    [SerializeField]
     GameObject currentPoint;
 
 	void Start ()
 	{
-        pointSensor = transform.GetChild(0).gameObject;
+        
 	}
 	
 	void Update ()
-	{
-        targetedPoint = pointSensor.GetComponent<PointSensor>().targetedPoint;
-
+	{      
         Move();
         Turn();
 	}
@@ -30,26 +36,22 @@ public class Player : MonoBehaviour, IMoveable
     {
         if (Input.GetAxisRaw("Vertical") == 1 && !moving)
         {
-            pointSensor.transform.localPosition = new Vector3(0, 0, 5f);
-
+            targetedPoint = pointSensorFront.GetComponent<PointSensor>().targetedPoint;
             StartCoroutine("PositionChange", targetedPoint.transform);
         }
         else if (Input.GetAxisRaw("Vertical") == -1 && !moving)
         {
-            pointSensor.transform.localPosition = new Vector3(0, 0, -5f);
-
+            targetedPoint = pointSensorBack.GetComponent<PointSensor>().targetedPoint;
             StartCoroutine("PositionChange", targetedPoint.transform);
         }
         else if (Input.GetAxisRaw("Horizontal") == 1 && !moving)
         {
-            pointSensor.transform.localPosition = new Vector3(25f, 0, 0);
-
+            targetedPoint = pointSensorLeft.GetComponent<PointSensor>().targetedPoint;
             StartCoroutine("PositionChange", targetedPoint.transform);
         }
         else if (Input.GetAxisRaw("Horizontal") == -1 && !moving)
         {
-            pointSensor.transform.localPosition = new Vector3(-25f, 0, 0);
-
+            targetedPoint = pointSensorRight.GetComponent<PointSensor>().targetedPoint;
             StartCoroutine("PositionChange", targetedPoint.transform);
         }
     }
@@ -72,6 +74,7 @@ public class Player : MonoBehaviour, IMoveable
         moving = true;
 
         currentPoint.GetComponent<MovePoint>().MoveOccupant(targetedPoint);
+        currentPoint = targetedPoint;
 
         while (Vector3.Distance(transform.position, target.position) > 0.05f)
         {
@@ -108,7 +111,7 @@ public class Player : MonoBehaviour, IMoveable
     {
         if (!moving)
         {
-            currentPoint = other.gameObject;
-        }        
+            //currentPoint = other.gameObject;
+        } 
     }
 }

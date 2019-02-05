@@ -19,27 +19,27 @@ public class MovePoint : MonoBehaviour
 
     public void AddConnection(GameObject selectedTile)
     {
-        try
-        {
-            GameObject selectedMovePoint = selectedTile.transform.GetChild(0).gameObject;
+        GameObject selectedMovePoint = selectedTile.transform.GetChild(0).gameObject;
 
-            if (!connectedTiles.Contains(selectedMovePoint))
-            {
-                connectedTiles.Add(selectedMovePoint);
-
-                selectedMovePoint.GetComponent<MovePoint>().AddConnection(transform.parent.gameObject);
-            }
-        }
-        catch
+        if (!connectedTiles.Contains(selectedMovePoint))
         {
-            print("Can't move there!");
+            connectedTiles.Add(selectedMovePoint);
+
+            selectedMovePoint.GetComponent<MovePoint>().AddConnection(transform.parent.gameObject);
         }
     }
 
     public void MoveOccupant(GameObject target)
     {
-        target.GetComponent<MovePoint>().occupant = occupant;
+        try
+        {
+            target.GetComponent<MovePoint>().occupant = occupant;
 
-        occupant = null;        
+            occupant = null;
+        }
+        catch
+        {
+            print("Can't move there!");
+        }       
     }
 }
