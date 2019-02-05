@@ -37,22 +37,46 @@ public class Player : MonoBehaviour, IMoveable
         if (Input.GetAxisRaw("Vertical") == 1 && !moving)
         {
             targetedPoint = pointSensorFront.GetComponent<PointSensor>().targetedPoint;
-            StartCoroutine("PositionChange", targetedPoint.transform);
+
+            if (targetedPoint != null)
+            {
+                StartCoroutine("PositionChange", targetedPoint.transform);
+            }
+
+            targetedPoint = null;
         }
         else if (Input.GetAxisRaw("Vertical") == -1 && !moving)
         {
             targetedPoint = pointSensorBack.GetComponent<PointSensor>().targetedPoint;
-            StartCoroutine("PositionChange", targetedPoint.transform);
+
+            if (targetedPoint != null)
+            {
+                StartCoroutine("PositionChange", targetedPoint.transform);
+            }
+
+            targetedPoint = null;
         }
         else if (Input.GetAxisRaw("Horizontal") == 1 && !moving)
         {
             targetedPoint = pointSensorLeft.GetComponent<PointSensor>().targetedPoint;
-            StartCoroutine("PositionChange", targetedPoint.transform);
+
+            if (targetedPoint != null)
+            {
+                StartCoroutine("PositionChange", targetedPoint.transform);
+            }
+
+            targetedPoint = null;
         }
         else if (Input.GetAxisRaw("Horizontal") == -1 && !moving)
         {
             targetedPoint = pointSensorRight.GetComponent<PointSensor>().targetedPoint;
-            StartCoroutine("PositionChange", targetedPoint.transform);
+
+            if (targetedPoint != null)
+            {
+                StartCoroutine("PositionChange", targetedPoint.transform);
+            }
+
+            targetedPoint = null;
         }
     }
 
