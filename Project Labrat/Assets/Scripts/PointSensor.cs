@@ -20,4 +20,9 @@ public class PointSensor : MonoBehaviour
     {
         targetedPoint = other.gameObject;
     }
+
+    void OnTriggerExit(Collider other)
+    {
+        targetedPoint = null;
+    }
 }
