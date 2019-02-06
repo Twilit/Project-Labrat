@@ -7,14 +7,24 @@ public class MovePoint : MonoBehaviour
     public List<GameObject> connectedTiles;
     public GameObject occupant;
 
+    bool travelled = false;
+
 	void Start ()
 	{
-		
-	}
+        transform.parent.GetChild(1).gameObject.layer = 12;
+    }
 	
 	void Update ()
 	{
-		
+        if (occupant != null)
+        {
+            travelled = true;
+        }
+
+        if (travelled)
+        {
+            transform.parent.GetChild(1).gameObject.layer = 11;
+        }
 	}
 
     public void AddConnection(GameObject selectedTile)
