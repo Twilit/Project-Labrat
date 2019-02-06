@@ -1,0 +1,471 @@
+fileFormatVersion: 2
+guid: b3c915a7aa8f46f448b2e5d72cb03d44
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 646
+    100002: Base 003
+    100004: Base 011
+    100006: Base 014
+    100008: Base 015
+    100010: Box 9
+    100012: 'Dark Gray lots of  cracks '
+    100014: Dark Gray lots of  cracks 001
+    100016: Dark Gray lots of  cracks 002
+    100018: Dark Gray lots of  cracks 003
+    100020: Dark Gray001
+    100022: Dark Gray002
+    100024: Dark Gray003
+    100026: Dark Gray004
+    100028: Dark Gray005
+    100030: Dark Gray006
+    100032: Dark Gray007
+    100034: Dark Gray008
+    100036: Dark Gray009
+    100038: Dark Gray010
+    100040: Dark Gray011
+    100042: Dark Gray012
+    100044: Dark Gray013
+    100046: Dark Gray014
+    100048: Dark Gray016
+    100050: Dark Gray017
+    100052: Dark Gray018
+    100054: Dark Gray019
+    100056: Dark Gray021
+    100058: Dark Gray022
+    100060: Dark Gray023
+    100062: Dark Gray024
+    100064: Dark Gray025
+    100066: Dark Gray026
+    100068: 'full tile '
+    100070: Light Gray
+    100072: Light Gray001
+    100074: Light Gray002
+    100076: Light Gray004
+    100078: Light Gray005
+    100080: Light Gray006
+    100082: Light Gray007
+    100084: Light Gray008
+    100086: Light Gray009
+    100088: Light Gray010
+    100090: Light Gray011
+    100092: Light Gray012
+    100094: Light Gray014
+    100096: Light Gray015
+    100098: Light Gray016
+    100100: Light Gray018
+    100102: Light Gray021
+    100104: Light Gray022
+    100106: Light Gray023
+    100108: Light Gray024
+    100110: Light Gray025
+    100112: Light Gray027
+    100114: Light Gray028
+    100116: Light Gray029
+    100118: Light Gray030
+    100120: Light Gray031
+    100122: Light Gray032
+    100124: Light Gray033
+    100126: Light Gray034
+    100128: //RootNode
+    100130: Plane003
+    100132: Plane005
+    100134: Seeling
+    100136: Seeling001
+    100138: Seeling002
+    100140: Wall One
+    100142: Wall One001
+    100144: wall three
+    100146: Wall two
+    100148: Wall two001
+    100150: Wall two002
+    400000: 646
+    400002: Base 003
+    400004: Base 011
+    400006: Base 014
+    400008: Base 015
+    400010: Box 9
+    400012: 'Dark Gray lots of  cracks '
+    400014: Dark Gray lots of  cracks 001
+    400016: Dark Gray lots of  cracks 002
+    400018: Dark Gray lots of  cracks 003
+    400020: Dark Gray001
+    400022: Dark Gray002
+    400024: Dark Gray003
+    400026: Dark Gray004
+    400028: Dark Gray005
+    400030: Dark Gray006
+    400032: Dark Gray007
+    400034: Dark Gray008
+    400036: Dark Gray009
+    400038: Dark Gray010
+    400040: Dark Gray011
+    400042: Dark Gray012
+    400044: Dark Gray013
+    400046: Dark Gray014
+    400048: Dark Gray016
+    400050: Dark Gray017
+    400052: Dark Gray018
+    400054: Dark Gray019
+    400056: Dark Gray021
+    400058: Dark Gray022
+    400060: Dark Gray023
+    400062: Dark Gray024
+    400064: Dark Gray025
+    400066: Dark Gray026
+    400068: 'full tile '
+    400070: Light Gray
+    400072: Light Gray001
+    400074: Light Gray002
+    400076: Light Gray004
+    400078: Light Gray005
+    400080: Light Gray006
+    400082: Light Gray007
+    400084: Light Gray008
+    400086: Light Gray009
+    400088: Light Gray010
+    400090: Light Gray011
+    400092: Light Gray012
+    400094: Light Gray014
+    400096: Light Gray015
+    400098: Light Gray016
+    400100: Light Gray018
+    400102: Light Gray021
+    400104: Light Gray022
+    400106: Light Gray023
+    400108: Light Gray024
+    400110: Light Gray025
+    400112: Light Gray027
+    400114: Light Gray028
+    400116: Light Gray029
+    400118: Light Gray030
+    400120: Light Gray031
+    400122: Light Gray032
+    400124: Light Gray033
+    400126: Light Gray034
+    400128: //RootNode
+    400130: Plane003
+    400132: Plane005
+    400134: Seeling
+    400136: Seeling001
+    400138: Seeling002
+    400140: Wall One
+    400142: Wall One001
+    400144: wall three
+    400146: Wall two
+    400148: Wall two001
+    400150: Wall two002
+    2100000: Dark Gray
+    2100002: dark gray side crack
+    2100004: 'Material #28'
+    2100006: light gray side crack
+    2100008: light grey small crack
+    2100010: 09 - Default
+    2300000: 646
+    2300002: Base 003
+    2300004: Base 011
+    2300006: Base 014
+    2300008: Base 015
+    2300010: Box 9
+    2300012: 'Dark Gray lots of  cracks '
+    2300014: Dark Gray lots of  cracks 001
+    2300016: Dark Gray lots of  cracks 002
+    2300018: Dark Gray lots of  cracks 003
+    2300020: Dark Gray001
+    2300022: Dark Gray002
+    2300024: Dark Gray003
+    2300026: Dark Gray004
+    2300028: Dark Gray005
+    2300030: Dark Gray006
+    2300032: Dark Gray007
+    2300034: Dark Gray008
+    2300036: Dark Gray009
+    2300038: Dark Gray010
+    2300040: Dark Gray011
+    2300042: Dark Gray012
+    2300044: Dark Gray013
+    2300046: Dark Gray014
+    2300048: Dark Gray016
+    2300050: Dark Gray017
+    2300052: Dark Gray018
+    2300054: Dark Gray019
+    2300056: Dark Gray021
+    2300058: Dark Gray022
+    2300060: Dark Gray023
+    2300062: Dark Gray024
+    2300064: Dark Gray025
+    2300066: Dark Gray026
+    2300068: 'full tile '
+    2300070: Light Gray
+    2300072: Light Gray001
+    2300074: Light Gray002
+    2300076: Light Gray004
+    2300078: Light Gray005
+    2300080: Light Gray006
+    2300082: Light Gray007
+    2300084: Light Gray008
+    2300086: Light Gray009
+    2300088: Light Gray010
+    2300090: Light Gray011
+    2300092: Light Gray012
+    2300094: Light Gray014
+    2300096: Light Gray015
+    2300098: Light Gray016
+    2300100: Light Gray018
+    2300102: Light Gray021
+    2300104: Light Gray022
+    2300106: Light Gray023
+    2300108: Light Gray024
+    2300110: Light Gray025
+    2300112: Light Gray027
+    2300114: Light Gray028
+    2300116: Light Gray029
+    2300118: Light Gray030
+    2300120: Light Gray031
+    2300122: Light Gray032
+    2300124: Light Gray033
+    2300126: Light Gray034
+    2300128: Plane003
+    2300130: Plane005
+    2300132: Seeling
+    2300134: Seeling001
+    2300136: Seeling002
+    2300138: Wall One
+    2300140: Wall One001
+    2300142: wall three
+    2300144: Wall two
+    2300146: Wall two001
+    2300148: Wall two002
+    3300000: 646
+    3300002: Base 003
+    3300004: Base 011
+    3300006: Base 014
+    3300008: Base 015
+    3300010: Box 9
+    3300012: 'Dark Gray lots of  cracks '
+    3300014: Dark Gray lots of  cracks 001
+    3300016: Dark Gray lots of  cracks 002
+    3300018: Dark Gray lots of  cracks 003
+    3300020: Dark Gray001
+    3300022: Dark Gray002
+    3300024: Dark Gray003
+    3300026: Dark Gray004
+    3300028: Dark Gray005
+    3300030: Dark Gray006
+    3300032: Dark Gray007
+    3300034: Dark Gray008
+    3300036: Dark Gray009
+    3300038: Dark Gray010
+    3300040: Dark Gray011
+    3300042: Dark Gray012
+    3300044: Dark Gray013
+    3300046: Dark Gray014
+    3300048: Dark Gray016
+    3300050: Dark Gray017
+    3300052: Dark Gray018
+    3300054: Dark Gray019
+    3300056: Dark Gray021
+    3300058: Dark Gray022
+    3300060: Dark Gray023
+    3300062: Dark Gray024
+    3300064: Dark Gray025
+    3300066: Dark Gray026
+    3300068: 'full tile '
+    3300070: Light Gray
+    3300072: Light Gray001
+    3300074: Light Gray002
+    3300076: Light Gray004
+    3300078: Light Gray005
+    3300080: Light Gray006
+    3300082: Light Gray007
+    3300084: Light Gray008
+    3300086: Light Gray009
+    3300088: Light Gray010
+    3300090: Light Gray011
+    3300092: Light Gray012
+    3300094: Light Gray014
+    3300096: Light Gray015
+    3300098: Light Gray016
+    3300100: Light Gray018
+    3300102: Light Gray021
+    3300104: Light Gray022
+    3300106: Light Gray023
+    3300108: Light Gray024
+    3300110: Light Gray025
+    3300112: Light Gray027
+    3300114: Light Gray028
+    3300116: Light Gray029
+    3300118: Light Gray030
+    3300120: Light Gray031
+    3300122: Light Gray032
+    3300124: Light Gray033
+    3300126: Light Gray034
+    3300128: Plane003
+    3300130: Plane005
+    3300132: Seeling
+    3300134: Seeling001
+    3300136: Seeling002
+    3300138: Wall One
+    3300140: Wall One001
+    3300142: wall three
+    3300144: Wall two
+    3300146: Wall two001
+    3300148: Wall two002
+    4300000: Wall One
+    4300002: 'Dark Gray lots of  cracks '
+    4300004: Dark Gray001
+    4300006: Dark Gray002
+    4300008: Dark Gray003
+    4300010: Light Gray
+    4300012: Light Gray001
+    4300014: Light Gray002
+    4300016: Light Gray004
+    4300018: Light Gray023
+    4300020: Dark Gray017
+    4300022: Light Gray024
+    4300024: Seeling
+    4300026: Light Gray008
+    4300028: Light Gray007
+    4300030: Dark Gray004
+    4300032: Light Gray005
+    4300034: Dark Gray005
+    4300036: Light Gray006
+    4300038: Dark Gray006
+    4300040: Dark Gray007
+    4300042: Seeling001
+    4300044: Dark Gray023
+    4300046: Dark Gray025
+    4300048: Dark Gray024
+    4300050: Light Gray032
+    4300052: Light Gray033
+    4300054: Seeling002
+    4300056: Dark Gray026
+    4300058: Light Gray034
+    4300060: Wall two
+    4300062: Dark Gray lots of  cracks 001
+    4300064: Dark Gray008
+    4300066: Dark Gray009
+    4300068: Dark Gray010
+    4300070: Light Gray009
+    4300072: Light Gray010
+    4300074: Light Gray011
+    4300076: Light Gray012
+    4300078: Dark Gray014
+    4300080: Light Gray018
+    4300082: Wall two001
+    4300084: wall three
+    4300086: Dark Gray011
+    4300088: Light Gray014
+    4300090: Dark Gray012
+    4300092: Light Gray015
+    4300094: Dark Gray lots of  cracks 002
+    4300096: Dark Gray013
+    4300098: Light Gray016
+    4300100: Light Gray021
+    4300102: Dark Gray016
+    4300104: Light Gray022
+    4300106: Wall two002
+    4300108: Light Gray025
+    4300110: Dark Gray018
+    4300112: Wall One001
+    4300114: Dark Gray019
+    4300116: Light Gray027
+    4300118: Dark Gray lots of  cracks 003
+    4300120: Light Gray028
+    4300122: Dark Gray021
+    4300124: Light Gray029
+    4300126: Light Gray030
+    4300128: Dark Gray022
+    4300130: Light Gray031
+    4300132: 646
+    4300134: 'full tile '
+    4300136: Plane003
+    4300138: Base 003
+    4300140: Plane005
+    4300142: Base 014
+    4300144: Base 011
+    4300146: Box 9
+    4300148: Base 015
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
