@@ -41,7 +41,7 @@ public class Player : MonoBehaviour, IMoveable
         {
             targetedPoint = pointSensorFront.GetComponent<PointSensor>().targetedPoint;
 
-            if (targetedPoint != null)
+            if ((targetedPoint != null) && currentPoint.GetComponent<MovePoint>().CheckConnection(targetedPoint))
             {
                 StartCoroutine("PositionChange", targetedPoint.transform);
             }
@@ -52,7 +52,7 @@ public class Player : MonoBehaviour, IMoveable
         {
             targetedPoint = pointSensorBack.GetComponent<PointSensor>().targetedPoint;
 
-            if (targetedPoint != null)
+            if ((targetedPoint != null) && currentPoint.GetComponent<MovePoint>().CheckConnection(targetedPoint))
             {
                 StartCoroutine("PositionChange", targetedPoint.transform);
             }
@@ -63,7 +63,7 @@ public class Player : MonoBehaviour, IMoveable
         {
             targetedPoint = pointSensorLeft.GetComponent<PointSensor>().targetedPoint;
 
-            if (targetedPoint != null)
+            if ((targetedPoint != null) && currentPoint.GetComponent<MovePoint>().CheckConnection(targetedPoint))
             {
                 StartCoroutine("PositionChange", targetedPoint.transform);
             }
@@ -74,7 +74,7 @@ public class Player : MonoBehaviour, IMoveable
         {
             targetedPoint = pointSensorRight.GetComponent<PointSensor>().targetedPoint;
 
-            if (targetedPoint != null)
+            if ((targetedPoint != null) && currentPoint.GetComponent<MovePoint>().CheckConnection(targetedPoint))
             {
                 StartCoroutine("PositionChange", targetedPoint.transform);
             }
