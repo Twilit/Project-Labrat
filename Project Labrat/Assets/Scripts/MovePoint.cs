@@ -29,11 +29,105 @@ public class MovePoint : MonoBehaviour
         }
     }
 
-    public void CheckConnection(GameObject selectedMovePoint, Player.Direction facing)
+    public bool CheckConnection(GameObject selectedMovePoint/*, Player.Direction facing, string dir*/)
     {
         List<GameObject> otherConnectedTiles = selectedMovePoint.GetComponent<MovePoint>().connectedTiles;
 
+        if (connectedTiles.Contains(selectedMovePoint) && otherConnectedTiles.Contains(gameObject))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
 
+        /*switch (facing)
+        {
+            case Player.Direction.North:
+
+                if (dir == "forward")
+                {
+                    if (connectedTiles.Contains())
+                }
+                else if (dir == "backward")
+                {
+
+                }
+                else if (dir == "left")
+                {
+
+                }
+                else if (dir == "right")
+                {
+
+                }
+
+                break;
+
+            case Player.Direction.East:
+
+                if (dir == "forward")
+                {
+
+                }
+                else if (dir == "backward")
+                {
+
+                }
+                else if (dir == "left")
+                {
+
+                }
+                else if (dir == "right")
+                {
+
+                }
+
+                break;
+
+            case Player.Direction.South:
+
+                if (dir == "forward")
+                {
+
+                }
+                else if (dir == "backward")
+                {
+
+                }
+                else if (dir == "left")
+                {
+
+                }
+                else if (dir == "right")
+                {
+
+                }
+
+                break;
+
+            case Player.Direction.West:
+
+                if (dir == "forward")
+                {
+
+                }
+                else if (dir == "backward")
+                {
+
+                }
+                else if (dir == "left")
+                {
+
+                }
+                else if (dir == "right")
+                {
+
+                }
+
+                break;
+        }*/
     }
 
     public void MoveOccupant(GameObject target)
