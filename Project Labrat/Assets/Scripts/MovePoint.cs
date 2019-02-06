@@ -19,6 +19,7 @@ public class MovePoint : MonoBehaviour
         if (occupant != null)
         {
             travelled = true;
+            //transform.parent.GetChild(1).GetComponent<SpriteRenderer>
         }
 
         if (travelled)
