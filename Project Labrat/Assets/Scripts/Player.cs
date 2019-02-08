@@ -37,7 +37,27 @@ public class Player : MonoBehaviour, IMoveable
 
     public void Move()
     {
-        if (Input.GetAxisRaw("Vertical") == 1 && !moving)
+        if (Input.GetAxisRaw("Vertical") == 1)
+        {
+            GoForward();
+        }
+        else if (Input.GetAxisRaw("Vertical") == -1)
+        {
+            GoBackward();
+        }
+        else if (Input.GetAxisRaw("Horizontal") == 1)
+        {
+            GoLeft();
+        }
+        else if (Input.GetAxisRaw("Horizontal") == -1)
+        {
+            GoRight();
+        }
+    }
+
+    public void GoForward()
+    {
+        if (!moving)
         {
             targetedPoint = pointSensorFront.GetComponent<PointSensor>().targetedPoint;
 
@@ -48,7 +68,11 @@ public class Player : MonoBehaviour, IMoveable
 
             targetedPoint = null;
         }
-        else if (Input.GetAxisRaw("Vertical") == -1 && !moving)
+    }
+
+    public void GoBackward()
+    {
+        if (!moving)
         {
             targetedPoint = pointSensorBack.GetComponent<PointSensor>().targetedPoint;
 
@@ -59,7 +83,11 @@ public class Player : MonoBehaviour, IMoveable
 
             targetedPoint = null;
         }
-        else if (Input.GetAxisRaw("Horizontal") == 1 && !moving)
+    }
+
+    public void GoLeft()
+    {
+        if (!moving)
         {
             targetedPoint = pointSensorLeft.GetComponent<PointSensor>().targetedPoint;
 
@@ -70,7 +98,11 @@ public class Player : MonoBehaviour, IMoveable
 
             targetedPoint = null;
         }
-        else if (Input.GetAxisRaw("Horizontal") == -1 && !moving)
+    }
+
+    public void GoRight()
+    {
+        if (!moving)
         {
             targetedPoint = pointSensorRight.GetComponent<PointSensor>().targetedPoint;
 
@@ -84,16 +116,26 @@ public class Player : MonoBehaviour, IMoveable
     }
 
     public void Turn()
-    {
+    {     
         if (Input.GetButton("TurnLeft") && !moving)
         {
-            StartCoroutine("RotationChange", -90f);
+            TurnLeft();
         }
 
         if (Input.GetButton("TurnRight") && !moving)
         {
-            StartCoroutine("RotationChange", 90f);
+            TurnRight();
         }
+    }
+
+    public void TurnLeft()
+    {
+        StartCoroutine("RotationChange", -90f);
+    }
+
+    public void TurnRight()
+    {
+        StartCoroutine("RotationChange", 90f);
     }
 
     Direction UpdateDirection(Direction faceDir, float angle)
