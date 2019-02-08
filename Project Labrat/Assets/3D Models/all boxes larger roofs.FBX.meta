@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: 98a0c3c5105f37c42813ac45247e5024
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 646
+    100002: //RootNode
+    100004: Base 003
+    100006: Base 011
+    100008: Base 014
+    100010: Base 015
+    100012: Box 9
+    100014: Dark Gray lots of  cracks 001
+    100016: Dark Gray004
+    100018: Dark Gray005
+    100020: Dark Gray006
+    100022: Dark Gray007
+    100024: Dark Gray008
+    100026: Dark Gray009
+    100028: Dark Gray010
+    100030: Dark Gray014
+    100032: Dark Gray016
+    100034: Dark Gray023
+    100036: Dark Gray024
+    100038: Dark Gray025
+    100040: Dark Gray026
+    100042: 'full tile '
+    100044: Light Gray005
+    100046: Light Gray006
+    100048: Light Gray007
+    100050: Light Gray008
+    100052: Light Gray009
+    100054: Light Gray010
+    100056: Light Gray011
+    100058: Light Gray012
+    100060: Light Gray018
+    100062: Light Gray021
+    100064: Light Gray022
+    100066: Light Gray032
+    100068: Light Gray033
+    100070: Light Gray034
+    100072: Plane003
+    100074: roof
+    100076: roof001
+    100078: roof002
+    100080: Seeling
+    100082: Seeling001
+    100084: Seeling002
+    100086: Wall two
+    400000: 646
+    400002: //RootNode
+    400004: Base 003
+    400006: Base 011
+    400008: Base 014
+    400010: Base 015
+    400012: Box 9
+    400014: Dark Gray lots of  cracks 001
+    400016: Dark Gray004
+    400018: Dark Gray005
+    400020: Dark Gray006
+    400022: Dark Gray007
+    400024: Dark Gray008
+    400026: Dark Gray009
+    400028: Dark Gray010
+    400030: Dark Gray014
+    400032: Dark Gray016
+    400034: Dark Gray023
+    400036: Dark Gray024
+    400038: Dark Gray025
+    400040: Dark Gray026
+    400042: 'full tile '
+    400044: Light Gray005
+    400046: Light Gray006
+    400048: Light Gray007
+    400050: Light Gray008
+    400052: Light Gray009
+    400054: Light Gray010
+    400056: Light Gray011
+    400058: Light Gray012
+    400060: Light Gray018
+    400062: Light Gray021
+    400064: Light Gray022
+    400066: Light Gray032
+    400068: Light Gray033
+    400070: Light Gray034
+    400072: Plane003
+    400074: roof
+    400076: roof001
+    400078: roof002
+    400080: Seeling
+    400082: Seeling001
+    400084: Seeling002
+    400086: Wall two
+    2100000: dark gray side crack
+    2100002: 'Material #28'
+    2100004: light grey small crack
+    2100006: Dark Gray
+    2100008: light gray side crack
+    2100010: 09 - Default
+    2300000: 646
+    2300002: Base 003
+    2300004: Base 011
+    2300006: Base 014
+    2300008: Base 015
+    2300010: Box 9
+    2300012: Dark Gray lots of  cracks 001
+    2300014: Dark Gray004
+    2300016: Dark Gray005
+    2300018: Dark Gray006
+    2300020: Dark Gray007
+    2300022: Dark Gray008
+    2300024: Dark Gray009
+    2300026: Dark Gray010
+    2300028: Dark Gray014
+    2300030: Dark Gray016
+    2300032: Dark Gray023
+    2300034: Dark Gray024
+    2300036: Dark Gray025
+    2300038: Dark Gray026
+    2300040: 'full tile '
+    2300042: Light Gray005
+    2300044: Light Gray006
+    2300046: Light Gray007
+    2300048: Light Gray008
+    2300050: Light Gray009
+    2300052: Light Gray010
+    2300054: Light Gray011
+    2300056: Light Gray012
+    2300058: Light Gray018
+    2300060: Light Gray021
+    2300062: Light Gray022
+    2300064: Light Gray032
+    2300066: Light Gray033
+    2300068: Light Gray034
+    2300070: Plane003
+    2300072: roof
+    2300074: roof001
+    2300076: roof002
+    2300078: Seeling
+    2300080: Seeling001
+    2300082: Seeling002
+    2300084: Wall two
+    3300000: 646
+    3300002: Base 003
+    3300004: Base 011
+    3300006: Base 014
+    3300008: Base 015
+    3300010: Box 9
+    3300012: Dark Gray lots of  cracks 001
+    3300014: Dark Gray004
+    3300016: Dark Gray005
+    3300018: Dark Gray006
+    3300020: Dark Gray007
+    3300022: Dark Gray008
+    3300024: Dark Gray009
+    3300026: Dark Gray010
+    3300028: Dark Gray014
+    3300030: Dark Gray016
+    3300032: Dark Gray023
+    3300034: Dark Gray024
+    3300036: Dark Gray025
+    3300038: Dark Gray026
+    3300040: 'full tile '
+    3300042: Light Gray005
+    3300044: Light Gray006
+    3300046: Light Gray007
+    3300048: Light Gray008
+    3300050: Light Gray009
+    3300052: Light Gray010
+    3300054: Light Gray011
+    3300056: Light Gray012
+    3300058: Light Gray018
+    3300060: Light Gray021
+    3300062: Light Gray022
+    3300064: Light Gray032
+    3300066: Light Gray033
+    3300068: Light Gray034
+    3300070: Plane003
+    3300072: roof
+    3300074: roof001
+    3300076: roof002
+    3300078: Seeling
+    3300080: Seeling001
+    3300082: Seeling002
+    3300084: Wall two
+    4300000: Seeling
+    4300002: Light Gray008
+    4300004: Light Gray007
+    4300006: Dark Gray004
+    4300008: Light Gray005
+    4300010: Dark Gray005
+    4300012: Light Gray006
+    4300014: Dark Gray006
+    4300016: Dark Gray007
+    4300018: Seeling001
+    4300020: Dark Gray023
+    4300022: Dark Gray025
+    4300024: Dark Gray024
+    4300026: Light Gray032
+    4300028: Light Gray033
+    4300030: Seeling002
+    4300032: Dark Gray026
+    4300034: Light Gray034
+    4300036: Wall two
+    4300038: Dark Gray lots of  cracks 001
+    4300040: Dark Gray008
+    4300042: Dark Gray009
+    4300044: Dark Gray010
+    4300046: Light Gray009
+    4300048: Light Gray010
+    4300050: Light Gray011
+    4300052: Light Gray012
+    4300054: Dark Gray014
+    4300056: Light Gray018
+    4300058: 646
+    4300060: 'full tile '
+    4300062: Plane003
+    4300064: Base 003
+    4300066: Base 014
+    4300068: Base 011
+    4300070: Box 9
+    4300072: Base 015
+    4300074: roof
+    4300076: roof001
+    4300078: roof002
+    4300080: Light Gray022
+    4300082: Dark Gray016
+    4300084: Light Gray021
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
