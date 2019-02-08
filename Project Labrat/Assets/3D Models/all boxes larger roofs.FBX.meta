@@ -3,186 +3,178 @@ guid: 98a0c3c5105f37c42813ac45247e5024
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: 646
-    100002: //RootNode
-    100004: Base 003
-    100006: Base 011
-    100008: Base 014
-    100010: Base 015
-    100012: Box 9
-    100014: Dark Gray lots of  cracks 001
-    100016: Dark Gray004
-    100018: Dark Gray005
-    100020: Dark Gray006
-    100022: Dark Gray007
-    100024: Dark Gray008
-    100026: Dark Gray009
-    100028: Dark Gray010
-    100030: Dark Gray014
-    100032: Dark Gray016
-    100034: Dark Gray023
-    100036: Dark Gray024
-    100038: Dark Gray025
-    100040: Dark Gray026
-    100042: 'full tile '
-    100044: Light Gray005
-    100046: Light Gray006
-    100048: Light Gray007
-    100050: Light Gray008
-    100052: Light Gray009
-    100054: Light Gray010
-    100056: Light Gray011
-    100058: Light Gray012
-    100060: Light Gray018
-    100062: Light Gray021
-    100064: Light Gray022
-    100066: Light Gray032
-    100068: Light Gray033
-    100070: Light Gray034
-    100072: Plane003
-    100074: roof
-    100076: roof001
-    100078: roof002
-    100080: Seeling
-    100082: Seeling001
-    100084: Seeling002
-    100086: Wall two
-    400000: 646
-    400002: //RootNode
-    400004: Base 003
-    400006: Base 011
-    400008: Base 014
-    400010: Base 015
-    400012: Box 9
-    400014: Dark Gray lots of  cracks 001
-    400016: Dark Gray004
-    400018: Dark Gray005
-    400020: Dark Gray006
-    400022: Dark Gray007
-    400024: Dark Gray008
-    400026: Dark Gray009
-    400028: Dark Gray010
-    400030: Dark Gray014
-    400032: Dark Gray016
-    400034: Dark Gray023
-    400036: Dark Gray024
-    400038: Dark Gray025
-    400040: Dark Gray026
-    400042: 'full tile '
-    400044: Light Gray005
-    400046: Light Gray006
-    400048: Light Gray007
-    400050: Light Gray008
-    400052: Light Gray009
-    400054: Light Gray010
-    400056: Light Gray011
-    400058: Light Gray012
-    400060: Light Gray018
-    400062: Light Gray021
-    400064: Light Gray022
-    400066: Light Gray032
-    400068: Light Gray033
-    400070: Light Gray034
-    400072: Plane003
-    400074: roof
-    400076: roof001
-    400078: roof002
-    400080: Seeling
-    400082: Seeling001
-    400084: Seeling002
-    400086: Wall two
+    100000: //RootNode
+    100002: Base 014
+    100004: Box 9
+    100006: ClosedLC
+    100008: Dark Gray lots of  cracks 001
+    100010: Dark Gray004
+    100012: Dark Gray005
+    100014: Dark Gray006
+    100016: Dark Gray007
+    100018: Dark Gray008
+    100020: Dark Gray009
+    100022: Dark Gray010
+    100024: Dark Gray014
+    100026: Dark Gray016
+    100028: Dark Gray023
+    100030: Dark Gray024
+    100032: Dark Gray025
+    100034: Dark Gray026
+    100036: Light Gray005
+    100038: Light Gray006
+    100040: Light Gray007
+    100042: Light Gray008
+    100044: Light Gray009
+    100046: Light Gray010
+    100048: Light Gray011
+    100050: Light Gray012
+    100052: Light Gray018
+    100054: Light Gray021
+    100056: Light Gray022
+    100058: Light Gray032
+    100060: Light Gray033
+    100062: Light Gray034
+    100064: Seeling
+    100066: Seeling001
+    100068: Seeling002
+    100070: TBLC
+    100072: TBLCrough
+    100074: TBLLC
+    100076: TBLRLC
+    100078: TLC
+    100080: TLLC
+    100082: Wall two
+    400000: //RootNode
+    400002: Base 014
+    400004: Box 9
+    400006: ClosedLC
+    400008: Dark Gray lots of  cracks 001
+    400010: Dark Gray004
+    400012: Dark Gray005
+    400014: Dark Gray006
+    400016: Dark Gray007
+    400018: Dark Gray008
+    400020: Dark Gray009
+    400022: Dark Gray010
+    400024: Dark Gray014
+    400026: Dark Gray016
+    400028: Dark Gray023
+    400030: Dark Gray024
+    400032: Dark Gray025
+    400034: Dark Gray026
+    400036: Light Gray005
+    400038: Light Gray006
+    400040: Light Gray007
+    400042: Light Gray008
+    400044: Light Gray009
+    400046: Light Gray010
+    400048: Light Gray011
+    400050: Light Gray012
+    400052: Light Gray018
+    400054: Light Gray021
+    400056: Light Gray022
+    400058: Light Gray032
+    400060: Light Gray033
+    400062: Light Gray034
+    400064: Seeling
+    400066: Seeling001
+    400068: Seeling002
+    400070: TBLC
+    400072: TBLCrough
+    400074: TBLLC
+    400076: TBLRLC
+    400078: TLC
+    400080: TLLC
+    400082: Wall two
     2100000: dark gray side crack
     2100002: 'Material #28'
     2100004: light grey small crack
     2100006: Dark Gray
     2100008: light gray side crack
     2100010: 09 - Default
-    2300000: 646
-    2300002: Base 003
-    2300004: Base 011
-    2300006: Base 014
-    2300008: Base 015
-    2300010: Box 9
-    2300012: Dark Gray lots of  cracks 001
-    2300014: Dark Gray004
-    2300016: Dark Gray005
-    2300018: Dark Gray006
-    2300020: Dark Gray007
-    2300022: Dark Gray008
-    2300024: Dark Gray009
-    2300026: Dark Gray010
-    2300028: Dark Gray014
-    2300030: Dark Gray016
-    2300032: Dark Gray023
-    2300034: Dark Gray024
-    2300036: Dark Gray025
-    2300038: Dark Gray026
-    2300040: 'full tile '
-    2300042: Light Gray005
-    2300044: Light Gray006
-    2300046: Light Gray007
-    2300048: Light Gray008
-    2300050: Light Gray009
-    2300052: Light Gray010
-    2300054: Light Gray011
-    2300056: Light Gray012
-    2300058: Light Gray018
-    2300060: Light Gray021
-    2300062: Light Gray022
-    2300064: Light Gray032
-    2300066: Light Gray033
-    2300068: Light Gray034
-    2300070: Plane003
-    2300072: roof
-    2300074: roof001
-    2300076: roof002
-    2300078: Seeling
-    2300080: Seeling001
-    2300082: Seeling002
-    2300084: Wall two
-    3300000: 646
-    3300002: Base 003
-    3300004: Base 011
-    3300006: Base 014
-    3300008: Base 015
-    3300010: Box 9
-    3300012: Dark Gray lots of  cracks 001
-    3300014: Dark Gray004
-    3300016: Dark Gray005
-    3300018: Dark Gray006
-    3300020: Dark Gray007
-    3300022: Dark Gray008
-    3300024: Dark Gray009
-    3300026: Dark Gray010
-    3300028: Dark Gray014
-    3300030: Dark Gray016
-    3300032: Dark Gray023
-    3300034: Dark Gray024
-    3300036: Dark Gray025
-    3300038: Dark Gray026
-    3300040: 'full tile '
-    3300042: Light Gray005
-    3300044: Light Gray006
-    3300046: Light Gray007
-    3300048: Light Gray008
-    3300050: Light Gray009
-    3300052: Light Gray010
-    3300054: Light Gray011
-    3300056: Light Gray012
-    3300058: Light Gray018
-    3300060: Light Gray021
-    3300062: Light Gray022
-    3300064: Light Gray032
-    3300066: Light Gray033
-    3300068: Light Gray034
-    3300070: Plane003
-    3300072: roof
-    3300074: roof001
-    3300076: roof002
-    3300078: Seeling
-    3300080: Seeling001
-    3300082: Seeling002
-    3300084: Wall two
+    2300000: Base 014
+    2300002: Box 9
+    2300004: ClosedLC
+    2300006: Dark Gray lots of  cracks 001
+    2300008: Dark Gray004
+    2300010: Dark Gray005
+    2300012: Dark Gray006
+    2300014: Dark Gray007
+    2300016: Dark Gray008
+    2300018: Dark Gray009
+    2300020: Dark Gray010
+    2300022: Dark Gray014
+    2300024: Dark Gray016
+    2300026: Dark Gray023
+    2300028: Dark Gray024
+    2300030: Dark Gray025
+    2300032: Dark Gray026
+    2300034: Light Gray005
+    2300036: Light Gray006
+    2300038: Light Gray007
+    2300040: Light Gray008
+    2300042: Light Gray009
+    2300044: Light Gray010
+    2300046: Light Gray011
+    2300048: Light Gray012
+    2300050: Light Gray018
+    2300052: Light Gray021
+    2300054: Light Gray022
+    2300056: Light Gray032
+    2300058: Light Gray033
+    2300060: Light Gray034
+    2300062: Seeling
+    2300064: Seeling001
+    2300066: Seeling002
+    2300068: TBLC
+    2300070: TBLCrough
+    2300072: TBLLC
+    2300074: TBLRLC
+    2300076: TLC
+    2300078: TLLC
+    2300080: Wall two
+    3300000: Base 014
+    3300002: Box 9
+    3300004: ClosedLC
+    3300006: Dark Gray lots of  cracks 001
+    3300008: Dark Gray004
+    3300010: Dark Gray005
+    3300012: Dark Gray006
+    3300014: Dark Gray007
+    3300016: Dark Gray008
+    3300018: Dark Gray009
+    3300020: Dark Gray010
+    3300022: Dark Gray014
+    3300024: Dark Gray016
+    3300026: Dark Gray023
+    3300028: Dark Gray024
+    3300030: Dark Gray025
+    3300032: Dark Gray026
+    3300034: Light Gray005
+    3300036: Light Gray006
+    3300038: Light Gray007
+    3300040: Light Gray008
+    3300042: Light Gray009
+    3300044: Light Gray010
+    3300046: Light Gray011
+    3300048: Light Gray012
+    3300050: Light Gray018
+    3300052: Light Gray021
+    3300054: Light Gray022
+    3300056: Light Gray032
+    3300058: Light Gray033
+    3300060: Light Gray034
+    3300062: Seeling
+    3300064: Seeling001
+    3300066: Seeling002
+    3300068: TBLC
+    3300070: TBLCrough
+    3300072: TBLLC
+    3300074: TBLRLC
+    3300076: TLC
+    3300078: TLLC
+    3300080: Wall two
     4300000: Seeling
     4300002: Light Gray008
     4300004: Light Gray007
@@ -212,20 +204,18 @@ ModelImporter:
     4300052: Light Gray012
     4300054: Dark Gray014
     4300056: Light Gray018
-    4300058: 646
-    4300060: 'full tile '
-    4300062: Plane003
-    4300064: Base 003
+    4300058: ClosedLC
+    4300060: TLC
+    4300062: TLLC
+    4300064: TBLLC
     4300066: Base 014
-    4300068: Base 011
+    4300068: TBLCrough
     4300070: Box 9
-    4300072: Base 015
-    4300074: roof
-    4300076: roof001
-    4300078: roof002
-    4300080: Light Gray022
-    4300082: Dark Gray016
-    4300084: Light Gray021
+    4300072: TBLRLC
+    4300074: TBLC
+    4300076: Light Gray022
+    4300078: Dark Gray016
+    4300080: Light Gray021
   externalObjects: {}
   materials:
     importMaterials: 1
