@@ -117,12 +117,12 @@ public class Player : MonoBehaviour, IMoveable
 
     public void Turn()
     {     
-        if (Input.GetButton("TurnLeft") && !moving)
+        if (Input.GetButton("TurnLeft"))
         {
             TurnLeft();
         }
 
-        if (Input.GetButton("TurnRight") && !moving)
+        if (Input.GetButton("TurnRight"))
         {
             TurnRight();
         }
@@ -130,12 +130,18 @@ public class Player : MonoBehaviour, IMoveable
 
     public void TurnLeft()
     {
-        StartCoroutine("RotationChange", -90f);
+        if (!moving)
+        {
+            StartCoroutine("RotationChange", -90f);
+        }        
     }
 
     public void TurnRight()
     {
-        StartCoroutine("RotationChange", 90f);
+        if (!moving)
+        {
+            StartCoroutine("RotationChange", 90f);
+        }        
     }
 
     Direction UpdateDirection(Direction faceDir, float angle)
