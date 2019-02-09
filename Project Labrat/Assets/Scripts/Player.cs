@@ -5,6 +5,9 @@ using UnityEngine;
 public class Player : MonoBehaviour, IMoveable
 {
     bool moving;
+    public enum Buttons { Forward, Backward, Left, Right, TurnLeft, TurnRight, None};
+    Buttons buttonHeld;
+
     float moveSpeed = 10f;
     float turnSpeed = 15f;
 
@@ -27,6 +30,7 @@ public class Player : MonoBehaviour, IMoveable
 	void Start ()
 	{
         facing = Direction.North;
+        buttonHeld = Buttons.None;
 	}
 	
 	void Update ()
@@ -37,23 +41,58 @@ public class Player : MonoBehaviour, IMoveable
 
     public void Move()
     {
-        if (Input.GetAxisRaw("Vertical") == 1)
+        if (Input.GetAxisRaw("Vertical") == 1 || buttonHeld == Buttons.Forward)
         {
             GoForward();
         }
-        else if (Input.GetAxisRaw("Vertical") == -1)
+        else if (Input.GetAxisRaw("Vertical") == -1 || buttonHeld == Buttons.Backward)
         {
             GoBackward();
         }
-        else if (Input.GetAxisRaw("Horizontal") == 1)
+        else if (Input.GetAxisRaw("Horizontal") == -1 || buttonHeld == Buttons.Left)
         {
             GoLeft();
         }
-        else if (Input.GetAxisRaw("Horizontal") == -1)
+        else if (Input.GetAxisRaw("Horizontal") == 1 || buttonHeld == Buttons.Right)
         {
             GoRight();
         }
     }
+
+    public void ButtonDown(string _buttonHeld)
+    {
+        if (_buttonHeld == "Forward")
+        {
+            buttonHeld = Buttons.Forward;
+        }
+        else if (_buttonHeld == "Backward")
+        {
+            buttonHeld = Buttons.Backward;
+        }
+        else if (_buttonHeld == "Left")
+        {
+            buttonHeld = Buttons.Left;
+        }
+        else if (_buttonHeld == "Right")
+        {
+            buttonHeld = Buttons.Right;
+        }
+        else if (_buttonHeld == "TurnLeft")
+        {
+            buttonHeld = Buttons.TurnLeft;
+        }
+        else if (_buttonHeld == "TurnRight")
+        {
+            buttonHeld = Buttons.TurnRight;
+        }
+    }
+
+    public void ButtonUp()
+    {
+        buttonHeld = Buttons.None;
+    }
+
+
 
     public void GoForward()
     {
@@ -117,12 +156,11 @@ public class Player : MonoBehaviour, IMoveable
 
     public void Turn()
     {     
-        if (Input.GetButton("TurnLeft"))
+        if (Input.GetButton("TurnLeft") || buttonHeld == Buttons.TurnLeft)
         {
             TurnLeft();
         }
-
-        if (Input.GetButton("TurnRight"))
+        else if (Input.GetButton("TurnRight") || buttonHeld == Buttons.TurnRight)
         {
             TurnRight();
         }
