@@ -8,24 +8,16 @@ public class TileTemplates : MonoBehaviour
     public GameObject[] eastTiles;
     public GameObject[] southTiles;
     public GameObject[] westTiles;
-
     public GameObject closedTile;
 
     public List<GameObject> tiles;
 
-    public float waitTime;
+    public GameObject coin;
+
     public GameObject exit;
-    bool spawnedExit;
 
     void Update()
     {
-        if (waitTime <= 0)
-        {
 
-        }
-        else
-        {
-            waitTime -= Time.deltaTime;
-        }
     }
 }

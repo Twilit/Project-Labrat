@@ -33,6 +33,7 @@ public class TileSpawner : MonoBehaviour
                     // Spawns tile with an northern opening
                     rand = Random.Range(0, templates.northTiles.Length);
                     GameObject northTile = Instantiate(templates.northTiles[rand], transform.position + new Vector3 (0, 0.001f, 0), templates.northTiles[rand].transform.rotation);
+                    GameObject coin = Instantiate(templates.coin, transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
 
                     northTile.transform.parent = map.transform;
                     northTile.transform.localScale = Vector3.one;

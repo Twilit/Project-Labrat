@@ -9,45 +9,45 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1553203758957888}
+  m_RootGameObject: {fileID: 1811526203830538}
   m_IsPrefabAsset: 1
---- !u!1 &1553203758957888
+--- !u!1 &1811526203830538
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4987791957124558}
-  - component: {fileID: 33480552915797682}
-  - component: {fileID: 23683610238085662}
-  - component: {fileID: 95720379786796966}
+  - component: {fileID: 4862335742653264}
+  - component: {fileID: 33114903286067006}
+  - component: {fileID: 23989246484136416}
+  - component: {fileID: 95983596689416158}
   m_Layer: 0
-  m_Name: Currency
+  m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4987791957124558
+--- !u!4 &4862335742653264
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1553203758957888}
+  m_GameObject: {fileID: 1811526203830538}
   m_LocalRotation: {x: -0.028027674, y: -0.06972894, z: -0.0019598862, w: 0.99717027}
-  m_LocalPosition: {x: 5.616889, y: 0.38154268, z: 5.415162}
-  m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
+  m_LocalPosition: {x: 0, y: 0.33, z: 0}
+  m_LocalScale: {x: 0.13817865, y: 0.13817862, z: 0.13817862}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23683610238085662
+--- !u!23 &23989246484136416
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1553203758957888}
+  m_GameObject: {fileID: 1811526203830538}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -77,20 +77,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33480552915797682
+--- !u!33 &33114903286067006
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1553203758957888}
+  m_GameObject: {fileID: 1811526203830538}
   m_Mesh: {fileID: 4300000, guid: 3c9f0a8ee6d38294db5a2e19f850b3f8, type: 3}
---- !u!95 &95720379786796966
+--- !u!95 &95983596689416158
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1553203758957888}
+  m_GameObject: {fileID: 1811526203830538}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 3c9f0a8ee6d38294db5a2e19f850b3f8, type: 3}
   m_Controller: {fileID: 9100000, guid: 5dcccbe865dc24749a746d3c8dbebd3f, type: 2}
