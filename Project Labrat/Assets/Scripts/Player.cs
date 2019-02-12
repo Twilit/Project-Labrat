@@ -1,9 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour, IMoveable
 {
+    public enum ButtonDir { Forward, Backward, Left, Right, TurnLeft, TurnRight, None};
+    ButtonDir buttonHeld;
+    GameObject uiButtons;
+    ColorBlock buttonColours;
+
+    Image forwardButton;
+    Image backwardButton;
+    Image leftButton;
+    Image rightButton;
+    Image turnLeftButton;
+    Image turnRighttButton;
+
     bool moving;
     float moveSpeed = 10f;
     float turnSpeed = 15f;
@@ -27,7 +40,11 @@ public class Player : MonoBehaviour, IMoveable
 	void Start ()
 	{
         facing = Direction.North;
-	}
+        buttonHeld = ButtonDir.None;
+
+        uiButtons = GameObject.FindGameObjectWithTag("Buttons");
+        buttonColours = uiButtons.transform.GetChild(0).GetComponent<Button>().colors;
+    }
 	
 	void Update ()
 	{      
@@ -37,23 +54,66 @@ public class Player : MonoBehaviour, IMoveable
 
     public void Move()
     {
-        if (Input.GetAxisRaw("Vertical") == 1)
+        if (Input.GetAxisRaw("Vertical") == 1 || buttonHeld == ButtonDir.Forward)
         {
             GoForward();
         }
-        else if (Input.GetAxisRaw("Vertical") == -1)
+        else if (Input.GetAxisRaw("Vertical") == -1 || buttonHeld == ButtonDir.Backward)
         {
             GoBackward();
         }
-        else if (Input.GetAxisRaw("Horizontal") == 1)
+        else if (Input.GetAxisRaw("Horizontal") == -1 || buttonHeld == ButtonDir.Left)
         {
             GoLeft();
         }
-        else if (Input.GetAxisRaw("Horizontal") == -1)
+        else if (Input.GetAxisRaw("Horizontal") == 1 || buttonHeld == ButtonDir.Right)
         {
             GoRight();
         }
+
+        if (!moving)
+        {
+            for (int i = 0; i < uiButtons.transform.childCount; i++)
+            {
+                uiButtons.transform.GetChild(i).gameObject.GetComponent<Button>().interactable = true;
+            }
+        }
     }
+
+    public void ButtonDown(string _buttonHeld)
+    {
+        if (_buttonHeld == "Forward")
+        {
+            buttonHeld = ButtonDir.Forward;            
+        }
+        else if (_buttonHeld == "Backward")
+        {
+            buttonHeld = ButtonDir.Backward;
+        }
+        else if (_buttonHeld == "Left")
+        {
+            buttonHeld = ButtonDir.Left;
+        }
+        else if (_buttonHeld == "Right")
+        {
+            buttonHeld = ButtonDir.Right;
+        }
+        else if (_buttonHeld == "TurnLeft")
+        {
+            buttonHeld = ButtonDir.TurnLeft;
+        }
+        else if (_buttonHeld == "TurnRight")
+        {
+            buttonHeld = ButtonDir.TurnRight;
+        }
+    }
+
+    public void ButtonUp()
+    {
+        buttonHeld = ButtonDir.None;
+    }
+
+
 
     public void GoForward()
     {
@@ -67,6 +127,17 @@ public class Player : MonoBehaviour, IMoveable
             }
 
             targetedPoint = null;
+
+            int butNum = 0;
+            uiButtons.transform.GetChild(butNum).GetComponent<Button>().interactable = false;
+
+            for (int i = 0; i < uiButtons.transform.childCount; i++)
+            {
+                if (i != butNum)
+                {
+                    uiButtons.transform.GetChild(i).gameObject.GetComponent<Button>().interactable = true;
+                }                
+            }
         }
     }
 
@@ -82,6 +153,17 @@ public class Player : MonoBehaviour, IMoveable
             }
 
             targetedPoint = null;
+
+            int butNum = 1;
+            uiButtons.transform.GetChild(butNum).GetComponent<Button>().interactable = false;
+
+            for (int i = 0; i < uiButtons.transform.childCount; i++)
+            {
+                if (i != butNum)
+                {
+                    uiButtons.transform.GetChild(i).gameObject.GetComponent<Button>().interactable = true;
+                }
+            }
         }
     }
 
@@ -97,6 +179,17 @@ public class Player : MonoBehaviour, IMoveable
             }
 
             targetedPoint = null;
+
+            int butNum = 2;
+            uiButtons.transform.GetChild(butNum).GetComponent<Button>().interactable = false;
+
+            for (int i = 0; i < uiButtons.transform.childCount; i++)
+            {
+                if (i != butNum)
+                {
+                    uiButtons.transform.GetChild(i).gameObject.GetComponent<Button>().interactable = true;
+                }
+            }
         }
     }
 
@@ -112,17 +205,27 @@ public class Player : MonoBehaviour, IMoveable
             }
 
             targetedPoint = null;
+
+            int butNum = 3;
+            uiButtons.transform.GetChild(butNum).GetComponent<Button>().interactable = false;
+
+            for (int i = 0; i < uiButtons.transform.childCount; i++)
+            {
+                if (i != butNum)
+                {
+                    uiButtons.transform.GetChild(i).gameObject.GetComponent<Button>().interactable = true;
+                }
+            }
         }
     }
 
     public void Turn()
     {     
-        if (Input.GetButton("TurnLeft"))
+        if (Input.GetButton("TurnLeft") || buttonHeld == ButtonDir.TurnLeft)
         {
             TurnLeft();
         }
-
-        if (Input.GetButton("TurnRight"))
+        else if (Input.GetButton("TurnRight") || buttonHeld == ButtonDir.TurnRight)
         {
             TurnRight();
         }
@@ -133,6 +236,17 @@ public class Player : MonoBehaviour, IMoveable
         if (!moving)
         {
             StartCoroutine("RotationChange", -90f);
+
+            int butNum = 4;
+            uiButtons.transform.GetChild(butNum).GetComponent<Button>().interactable = false;
+
+            for (int i = 0; i < uiButtons.transform.childCount; i++)
+            {
+                if (i != butNum)
+                {
+                    uiButtons.transform.GetChild(i).gameObject.GetComponent<Button>().interactable = true;
+                }
+            }
         }        
     }
 
@@ -141,6 +255,17 @@ public class Player : MonoBehaviour, IMoveable
         if (!moving)
         {
             StartCoroutine("RotationChange", 90f);
+
+            int butNum = 5;
+            uiButtons.transform.GetChild(butNum).GetComponent<Button>().interactable = false;
+
+            for (int i = 0; i < uiButtons.transform.childCount; i++)
+            {
+                if (i != butNum)
+                {
+                    uiButtons.transform.GetChild(i).gameObject.GetComponent<Button>().interactable = true;
+                }
+            }
         }        
     }
 
