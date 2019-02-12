@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1083058665536166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.81256104, y: 1.4189453, z: -0.96484375}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -133,5 +133,5 @@ MonoBehaviour:
   - {fileID: 1846247619964766, guid: 1ee3f8b9dc94aa54bbf651c1d5c1d61b, type: 2}
   closedTile: {fileID: 1190251821797430, guid: 75f5bd3ec3294c24194786c008eb35ab, type: 2}
   tiles: []
-  waitTime: 0
+  coin: {fileID: 1811526203830538, guid: 0decbfe4c3a4e15468a517311ae91e79, type: 2}
   exit: {fileID: 0}
