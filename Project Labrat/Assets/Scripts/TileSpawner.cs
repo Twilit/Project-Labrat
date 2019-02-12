@@ -33,7 +33,7 @@ public class TileSpawner : MonoBehaviour
                     // Spawns tile with an northern opening
                     rand = Random.Range(0, templates.northTiles.Length);
                     GameObject northTile = Instantiate(templates.northTiles[rand], transform.position + new Vector3 (0, 0.001f, 0), templates.northTiles[rand].transform.rotation);
-
+                    templates.ResetEndTime();
                     SpawnItem();
 
                     northTile.transform.parent = map.transform;
@@ -47,7 +47,7 @@ public class TileSpawner : MonoBehaviour
                     // Spawns tile with an eastern opening
                     rand = Random.Range(0, templates.eastTiles.Length);
                     GameObject eastTile = Instantiate(templates.eastTiles[rand], transform.position + new Vector3(0, -0.001f, 0), templates.eastTiles[rand].transform.rotation);
-
+                    templates.ResetEndTime();
                     SpawnItem();
 
                     eastTile.transform.parent = map.transform;
@@ -60,7 +60,7 @@ public class TileSpawner : MonoBehaviour
                     // Spawns tile with an southern opening
                     rand = Random.Range(0, templates.southTiles.Length);
                     GameObject southTile = Instantiate(templates.southTiles[rand], transform.position + new Vector3(0, 0.002f, 0), templates.southTiles[rand].transform.rotation);
-
+                    templates.ResetEndTime();
                     SpawnItem();
 
                     southTile.transform.parent = map.transform;
@@ -73,7 +73,7 @@ public class TileSpawner : MonoBehaviour
                     // Spawns tile with an western opening
                     rand = Random.Range(0, templates.westTiles.Length);
                     GameObject westTile = Instantiate(templates.westTiles[rand], transform.position + new Vector3(0, -0.002f, 0), templates.westTiles[rand].transform.rotation);
-
+                    templates.ResetEndTime();
                     SpawnItem();
 
                     westTile.transform.parent = map.transform;
@@ -92,7 +92,7 @@ public class TileSpawner : MonoBehaviour
 
         if (i == 0)
         {
-            GameObject coin = Instantiate(templates.coin, transform.position + new Vector3(Random.Range(-2f, 2f), 0.5f, Random.Range(-2f, 2f)), Quaternion.identity);
+            GameObject coin = Instantiate(templates.coin, transform.position + new Vector3(Random.Range(-2.5f, 2.5f), 0.5f, Random.Range(-2.5f, 2.5f)), Quaternion.identity);
         }        
     }
 
