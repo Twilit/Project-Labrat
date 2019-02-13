@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 224818340896538660}
   - component: {fileID: 222956344712543808}
   - component: {fileID: 114874897366657118}
-  m_Layer: 2
+  m_Layer: 15
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 65390107332423792}
   - component: {fileID: 114544728712918114}
   - component: {fileID: 54030840688088180}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 223283185819939750}
   - component: {fileID: 114008633006976352}
   - component: {fileID: 114905792028943502}
-  m_Layer: 2
+  m_Layer: 15
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
