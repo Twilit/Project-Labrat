@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 4031301653600398}
   - component: {fileID: 33353926856296388}
   - component: {fileID: 23980091434262282}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TL3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4282534872215530}
   - component: {fileID: 114254986935419502}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TR
   m_TagString: Untagged
   m_Icon: {fileID: 0}

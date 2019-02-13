@@ -74,7 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4980788230343182}
   - component: {fileID: 114166151952798772}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TBR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 4284804295981590}
   - component: {fileID: 33457246448267678}
   - component: {fileID: 23883339981888832}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TBR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
