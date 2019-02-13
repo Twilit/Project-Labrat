@@ -20,12 +20,17 @@ public class TileTemplates : MonoBehaviour
     
     public float endtime = 0.5f;
 
+    private void Start()
+    {
+        loadingPanel.SetActive(true);
+    }
+
     void Update()
     {
         if (tiles.Count > 400)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            print("reload: " + tiles.Count);
+            print("reload; number of tiles: : " + tiles.Count);
         }
 
         if (endtime > 0)
@@ -39,11 +44,12 @@ public class TileTemplates : MonoBehaviour
                 if (tiles.Count > 60)
                 {
                     StartGame();
+                    print("start; number of tiles: " + tiles.Count);
                 }
                 else
                 {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                    print("reload: " + tiles.Count);
+                    print("reload; number of tiles: : " + tiles.Count);
                 }
             }
         }
