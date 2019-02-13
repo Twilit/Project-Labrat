@@ -22,7 +22,7 @@ public class TileTemplates : MonoBehaviour
 
     void Update()
     {
-        if (tiles.Count < 300)
+        if (tiles.Count > 300)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
