@@ -134,6 +134,7 @@ MonoBehaviour:
   closedTile: {fileID: 1190251821797430, guid: 75f5bd3ec3294c24194786c008eb35ab, type: 2}
   tiles: []
   coin: {fileID: 1811526203830538, guid: 0decbfe4c3a4e15468a517311ae91e79, type: 2}
+  sawblade: {fileID: 1069278167672556, guid: 3e396f83e22d1ca40bd4108d40f18a3e, type: 2}
   exit: {fileID: 1600674709400558, guid: 5ac13b8689f8e0c4e909df500429b2ba, type: 2}
   loadingPanel: {fileID: 0}
   endtime: 0.5
