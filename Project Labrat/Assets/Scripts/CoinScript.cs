@@ -21,7 +21,7 @@ public class CoinScript : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) < 10)
+        if (Vector3.Distance(transform.position, player.transform.position) < 8)
         {
             transform.GetChild(0).gameObject.SetActive(true);
         }
@@ -34,17 +34,13 @@ public class CoinScript : MonoBehaviour
 
     private void OnMouseExit()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) < 10)
-        {
-            transform.GetChild(0).gameObject.SetActive(false);
-        }
+        transform.GetChild(0).gameObject.SetActive(false);
     }
 
     private void OnMouseDown()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) < 10)
+        if (Vector3.Distance(transform.position, player.transform.position) < 8)
         {
-            print(Vector3.Distance(transform.position, player.transform.position));
 
             coins += 1;
             coinCounter.text = "x " + coins;

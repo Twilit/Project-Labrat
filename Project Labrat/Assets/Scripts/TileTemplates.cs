@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TileTemplates : MonoBehaviour
 {
@@ -14,12 +15,18 @@ public class TileTemplates : MonoBehaviour
 
     public GameObject coin;
     public GameObject exit;
+    public GameObject loadingPanel;
     bool exitSpawned;
     
     public static float endtime = 3;
 
     void Update()
     {
+        if (tiles.Count < 300)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
         if (endtime > 0)
         {
             endtime -= Time.deltaTime;
@@ -28,9 +35,14 @@ public class TileTemplates : MonoBehaviour
         {
             if (!exitSpawned)
             {
-                Instantiate(exit, tiles[tiles.Count-1].transform.position, Quaternion.identity); 
-
-                exitSpawned = true;
+                if (tiles.Count > 200)
+                {
+                    StartGame();
+                }
+                else
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
             }
         }
     }
@@ -38,5 +50,12 @@ public class TileTemplates : MonoBehaviour
     public void ResetEndTime()
     {
         endtime = 3;
+    }
+
+    void StartGame()
+    {
+        Instantiate(exit, tiles[tiles.Count - 1].transform.position, Quaternion.identity);
+        loadingPanel.SetActive(false);
+        exitSpawned = true;
     }
 }
