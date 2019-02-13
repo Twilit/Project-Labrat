@@ -9,6 +9,7 @@ TagManager:
   - Map
   - Closed
   - Buttons
+  - CoinCounter
   layers:
   - Default
   - TransparentFX

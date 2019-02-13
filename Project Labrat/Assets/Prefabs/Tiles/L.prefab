@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4378421186431018}
   - component: {fileID: 114477476267223030}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4837253565454424}
   - component: {fileID: 33131294212870210}
   - component: {fileID: 23375815624031412}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: T3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}

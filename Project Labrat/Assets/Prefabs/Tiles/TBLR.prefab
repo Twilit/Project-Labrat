@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 4732514426509076}
   - component: {fileID: 33305838720921658}
   - component: {fileID: 23217322644080416}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TBLR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4400106645733362}
   - component: {fileID: 114022483919093696}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TBLR
   m_TagString: Untagged
   m_Icon: {fileID: 0}

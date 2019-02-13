@@ -59,7 +59,8 @@ GameObject:
   - component: {fileID: 54558662247620976}
   - component: {fileID: 114871411461543188}
   - component: {fileID: 65865171584487502}
-  m_Layer: 0
+  - component: {fileID: 114916883550975268}
+  m_Layer: 2
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -424,6 +425,18 @@ MonoBehaviour:
   pointSensorLeft: {fileID: 1964200616239722}
   pointSensorRight: {fileID: 1617231667810156}
   currentPoint: {fileID: 0}
+--- !u!114 &114916883550975268
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1554771497244228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3add3d27a92d634999469de6adf44e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maximumHealth: 100
 --- !u!114 &114931684630847702
 MonoBehaviour:
   m_ObjectHideFlags: 1
