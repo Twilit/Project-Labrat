@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4448397884675234}
   - component: {fileID: 33418053919108498}
   - component: {fileID: 23815950563690746}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TL3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4021872849905138}
   - component: {fileID: 114535267817244736}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TL
   m_TagString: Untagged
   m_Icon: {fileID: 0}

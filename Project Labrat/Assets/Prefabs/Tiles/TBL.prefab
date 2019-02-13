@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4604923129529862}
   - component: {fileID: 114065884435202000}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TBL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 4477158363941000}
   - component: {fileID: 33072514603507862}
   - component: {fileID: 23666923088132414}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TBL
   m_TagString: Untagged
   m_Icon: {fileID: 0}

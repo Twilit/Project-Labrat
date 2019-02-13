@@ -73,7 +73,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4417611744050310}
   - component: {fileID: 114555170185072206}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 4078637161660086}
   - component: {fileID: 33751571982150702}
   - component: {fileID: 23640303242137944}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TB3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
