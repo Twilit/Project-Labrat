@@ -18,7 +18,7 @@ public class TileTemplates : MonoBehaviour
     public GameObject loadingPanel;
     bool exitSpawned;
     
-    public float endtime = 1;
+    public float endtime = 0.5f;
 
     void Update()
     {
@@ -51,7 +51,7 @@ public class TileTemplates : MonoBehaviour
 
     public void ResetEndTime()
     {
-        endtime = 1;
+        endtime = 0.5f;
     }
 
     void StartGame()
