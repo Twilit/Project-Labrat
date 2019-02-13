@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4137148846355938}
   - component: {fileID: 198050359188214314}
   - component: {fileID: 199316629020393944}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Fx_OilTrailHIGH_Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 33169364479078838}
   - component: {fileID: 23725193622708594}
   - component: {fileID: 82441802072143426}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: fire wowwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4723686071038740}
   - component: {fileID: 108806503954429192}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,13 +96,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1975296268438790}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.91889477, y: 0.51, z: 6.34}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.9, y: 0.51, z: 6.34}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4367584648721894}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!23 &23725193622708594
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -249,9 +249,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0.8396226, g: 0.5475079, b: 0.20990565, a: 1}
+  m_Color: {r: 0.7924528, g: 0.49404642, b: 0.2878248, a: 1}
   m_Intensity: 3
-  m_Range: 3
+  m_Range: 6
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -268,7 +268,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 57655
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
