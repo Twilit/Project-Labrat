@@ -18,13 +18,14 @@ public class TileTemplates : MonoBehaviour
     public GameObject loadingPanel;
     bool exitSpawned;
     
-    public static float endtime = 3;
+    public float endtime = 1;
 
     void Update()
     {
-        if (tiles.Count > 300)
+        if (tiles.Count > 400)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            print("reload: " + tiles.Count);
         }
 
         if (endtime > 0)
@@ -35,13 +36,14 @@ public class TileTemplates : MonoBehaviour
         {
             if (!exitSpawned)
             {
-                if (tiles.Count > 200)
+                if (tiles.Count > 60)
                 {
                     StartGame();
                 }
                 else
                 {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                    print("reload: " + tiles.Count);
                 }
             }
         }
@@ -49,7 +51,7 @@ public class TileTemplates : MonoBehaviour
 
     public void ResetEndTime()
     {
-        endtime = 3;
+        endtime = 1;
     }
 
     void StartGame()
