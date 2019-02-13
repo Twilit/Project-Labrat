@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TileTemplates : MonoBehaviour
 {
@@ -14,12 +15,19 @@ public class TileTemplates : MonoBehaviour
 
     public GameObject coin;
     public GameObject exit;
+    public GameObject loadingPanel;
     bool exitSpawned;
     
-    public static float endtime = 3;
+    public float endtime = 0.5f;
 
     void Update()
     {
+        if (tiles.Count > 400)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            print("reload: " + tiles.Count);
+        }
+
         if (endtime > 0)
         {
             endtime -= Time.deltaTime;
@@ -28,15 +36,28 @@ public class TileTemplates : MonoBehaviour
         {
             if (!exitSpawned)
             {
-                Instantiate(exit, tiles[tiles.Count-1].transform.position, Quaternion.identity); 
-
-                exitSpawned = true;
+                if (tiles.Count > 60)
+                {
+                    StartGame();
+                }
+                else
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                    print("reload: " + tiles.Count);
+                }
             }
         }
     }
 
     public void ResetEndTime()
     {
-        endtime = 3;
+        endtime = 0.5f;
+    }
+
+    void StartGame()
+    {
+        Instantiate(exit, tiles[tiles.Count - 1].transform.position, Quaternion.identity);
+        loadingPanel.SetActive(false);
+        exitSpawned = true;
     }
 }

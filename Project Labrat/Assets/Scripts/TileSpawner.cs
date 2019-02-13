@@ -20,7 +20,7 @@ public class TileSpawner : MonoBehaviour
         map = GameObject.FindGameObjectWithTag("Map");
         movePoint = transform.parent.GetChild(0).gameObject;
 
-        Invoke("Spawn", 0.1f);
+        Invoke("Spawn", 0.05f);
 	}
 	
 	void Spawn()
