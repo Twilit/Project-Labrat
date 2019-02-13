@@ -36,17 +36,28 @@ public class Player : MonoBehaviour, IMoveable
     GameObject targetedPoint;
     [SerializeField]
     GameObject currentPoint;
+    AudioSource audiosource;
+
+    public AudioClip MusicSource;
+
 
 	void Start ()
+    
 	{
         facing = Direction.North;
         buttonHeld = ButtonDir.None;
 
         uiButtons = GameObject.FindGameObjectWithTag("Buttons");
         buttonColours = uiButtons.transform.GetChild(0).GetComponent<Button>().colors;
+
+        audiosource = GetComponent<AudioSource>();
+        
+
+
     }
-	
-	void Update ()
+
+   
+    void Update ()
 	{      
         Move();
         Turn();
@@ -57,6 +68,7 @@ public class Player : MonoBehaviour, IMoveable
         if (Input.GetAxisRaw("Vertical") == 1 || buttonHeld == ButtonDir.Forward)
         {
             GoForward();
+            audiosource.PlayOneShot(MusicSource);
         }
         else if (Input.GetAxisRaw("Vertical") == -1 || buttonHeld == ButtonDir.Backward)
         {
@@ -84,7 +96,8 @@ public class Player : MonoBehaviour, IMoveable
     {
         if (_buttonHeld == "Forward")
         {
-            buttonHeld = ButtonDir.Forward;            
+            buttonHeld = ButtonDir.Forward;
+            
         }
         else if (_buttonHeld == "Backward")
         {
