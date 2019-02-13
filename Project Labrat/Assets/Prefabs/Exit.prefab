@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 4348133997792674}
   - component: {fileID: 33992699895412362}
   - component: {fileID: 23205498901111922}
-  m_Layer: 0
+  - component: {fileID: 65244354192900314}
+  m_Layer: 13
   m_Name: bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +37,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4109914336100892}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: End door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +54,7 @@ GameObject:
   - component: {fileID: 4699489222982974}
   - component: {fileID: 33218314564715452}
   - component: {fileID: 23435945115566960}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: flop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +69,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4857764336037044}
-  m_Layer: 0
+  - component: {fileID: 114332174154779782}
+  - component: {fileID: 54228713424142556}
+  m_Layer: 13
   m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +88,7 @@ GameObject:
   - component: {fileID: 4376315651424204}
   - component: {fileID: 33031468617804028}
   - component: {fileID: 23605895901934492}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: bop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4515760613277922}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Box001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,3 +319,41 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1022118294001120}
   m_Mesh: {fileID: 4300004, guid: 9673738240d051647bc15a13970154b6, type: 3}
+--- !u!54 &54228713424142556
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1600674709400558}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65244354192900314
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1022118294001120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 15}
+  m_Center: {x: 0, y: 0, z: 7}
+--- !u!114 &114332174154779782
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1600674709400558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc54e4f046f2474286d1a9d5c0401ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
