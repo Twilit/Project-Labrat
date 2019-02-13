@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class SawDamage : MonoBehaviour
 {
-
-    // Use this for initialization
+    GameObject blade;
+    Transform downPos;
+    Transform upPos;
+    
     void Start()
     {
+        blade = transform.GetChild(0).gameObject;
+        downPos = transform.GetChild(1);
+        upPos = transform.GetChild(2);
 
+        StartCoroutine("SawMove");
     }
 
-    // Update is called once per frame
     void Update()
     {
 
     }
+
     void OnTriggerEnter(Collider collision)
     {
 
@@ -27,7 +33,33 @@ public class SawDamage : MonoBehaviour
             if (health != null)
             {
 
-                health.Damage(100);
+                health.Damage(40);
+            }
+        }
+    }
+
+    IEnumerator SawMove()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(2f);
+
+            while (Vector3.Distance(blade.transform.position, downPos.position) > 0.05f)
+            {
+
+                blade.transform.position = Vector3.MoveTowards(blade.transform.position, downPos.position, 20 * Time.deltaTime);
+
+                yield return null;
+            }
+
+            yield return new WaitForSeconds(2f);
+
+            while (Vector3.Distance(blade.transform.position, upPos.position) > 0.05f)
+            {
+
+                blade.transform.position = Vector3.MoveTowards(blade.transform.position, upPos.position, 20 * Time.deltaTime);
+
+                yield return null;
             }
         }
     }
