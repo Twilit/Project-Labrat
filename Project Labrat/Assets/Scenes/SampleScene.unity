@@ -304,6 +304,11 @@ Prefab:
       propertyPath: currentPoint
       value: 
       objectReference: {fileID: 1260594487}
+    - target: {fileID: 114916883550975268, guid: 343725119578d0e40ad648849e243b43,
+        type: 2}
+      propertyPath: content
+      value: 
+      objectReference: {fileID: 1350145938}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 343725119578d0e40ad648849e243b43, type: 2}
   m_IsPrefabAsset: 0
@@ -743,7 +748,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.962
+  m_FillAmount: 1
   m_FillClockwise: 0
   m_FillOrigin: 2
 --- !u!222 &1350145939
