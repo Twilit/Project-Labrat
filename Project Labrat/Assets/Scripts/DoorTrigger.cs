@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DoorTrigger : MonoBehaviour {
-
+    // this was made by subgle sapling games but i modifield it to make it have any timer on it.
+    // by nathaniel meakin.
     [SerializeField] GameObject Door;
     bool isOpened = false;
 
