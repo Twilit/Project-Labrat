@@ -347,15 +347,15 @@ public class Player : MonoBehaviour, IMoveable
         currentPoint.GetComponent<MovePoint>().MoveOccupant(targetedPoint);
         currentPoint = targetedPoint;
 
+        if (!audiosource.isPlaying)
+            audiosource.PlayOneShot(MusicSource);
+
         while (Vector3.Distance(transform.position, target.position) > 0.05f)
         {
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
 
             yield return null;
         }
-
-        if (!audiosource.isPlaying)
-            audiosource.PlayOneShot(MusicSource);
 
         yield return new WaitForSeconds(0.1f);
 
@@ -369,16 +369,16 @@ public class Player : MonoBehaviour, IMoveable
         Quaternion startRot = transform.rotation;
         Quaternion endRot = Quaternion.Euler(0, angle, 0) * startRot;
 
+        if (!audiosource.isPlaying)
+            audiosource.PlayOneShot(MusicSource);
+        yield return new WaitForSeconds(0.1f);
+
         while (Quaternion.Angle(transform.rotation, endRot) > 0.05f)
         {
             transform.rotation = Quaternion.Lerp(transform.rotation, endRot, turnSpeed * Time.deltaTime);
 
             yield return null;
         }
-
-        if (!audiosource.isPlaying)
-            audiosource.PlayOneShot(MusicSource);
-        yield return new WaitForSeconds(0.1f);
 
         facing = UpdateDirection(facing, angle);
         moving = false;
