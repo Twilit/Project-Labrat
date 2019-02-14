@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33654529111053588}
   - component: {fileID: 23955715802400470}
   - component: {fileID: 82613386683788826}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: fire wowwo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 4200374665720130}
   - component: {fileID: 198204151981394986}
   - component: {fileID: 199617008125652592}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Fx_OilTrailHIGH_Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4833435858926300}
   - component: {fileID: 108032675236756568}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
