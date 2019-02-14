@@ -7,6 +7,11 @@ public class CoinScript : MonoBehaviour
 {
     Text coinCounter;
     GameObject player;
+   
+    AudioSource audiosource;
+
+    public AudioClip MusicSource;
+
 
     public static int coins = 0;
 
@@ -16,7 +21,9 @@ public class CoinScript : MonoBehaviour
 
         coinCounter = GameObject.FindGameObjectWithTag("CoinCounter").GetComponent<Text>();
         player = GameObject.FindGameObjectWithTag("Player");
-       
+
+        audiosource = GetComponent<AudioSource>();
+
     }
 
     private void OnMouseEnter()
@@ -41,6 +48,8 @@ public class CoinScript : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, player.transform.position) < 8)
         {
+
+            AudioSource.PlayClipAtPoint(MusicSource, transform.position);
 
             coins += 1;
             coinCounter.text = "x " + coins;
