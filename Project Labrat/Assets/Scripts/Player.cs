@@ -68,26 +68,22 @@ public class Player : MonoBehaviour, IMoveable
         if (Input.GetAxisRaw("Vertical") == 1 || buttonHeld == ButtonDir.Forward)
         {
             GoForward();
-            if (!audiosource.isPlaying)
-                audiosource.PlayOneShot(MusicSource);
+
         }
         else if (Input.GetAxisRaw("Vertical") == -1 || buttonHeld == ButtonDir.Backward)
         {
             GoBackward();
-            if (!audiosource.isPlaying)
-                audiosource.PlayOneShot(MusicSource);
+
         }
         else if (Input.GetAxisRaw("Horizontal") == -1 || buttonHeld == ButtonDir.Left)
         {
             GoLeft();
-            if (!audiosource.isPlaying)
-                audiosource.PlayOneShot(MusicSource);
+
         }
         else if (Input.GetAxisRaw("Horizontal") == 1 || buttonHeld == ButtonDir.Right)
         {
             GoRight();
-            if (!audiosource.isPlaying)
-                audiosource.PlayOneShot(MusicSource);
+
         }
 
         if (!moving)
@@ -356,7 +352,10 @@ public class Player : MonoBehaviour, IMoveable
             transform.position = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
 
             yield return null;
-        }              
+        }
+
+        if (!audiosource.isPlaying)
+            audiosource.PlayOneShot(MusicSource);
 
         yield return new WaitForSeconds(0.1f);
 
@@ -375,8 +374,10 @@ public class Player : MonoBehaviour, IMoveable
             transform.rotation = Quaternion.Lerp(transform.rotation, endRot, turnSpeed * Time.deltaTime);
 
             yield return null;
-        }        
+        }
 
+        if (!audiosource.isPlaying)
+            audiosource.PlayOneShot(MusicSource);
         yield return new WaitForSeconds(0.1f);
 
         facing = UpdateDirection(facing, angle);
