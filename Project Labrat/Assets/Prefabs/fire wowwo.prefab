@@ -21,7 +21,11 @@ GameObject:
   - component: {fileID: 4137148846355938}
   - component: {fileID: 198050359188214314}
   - component: {fileID: 199316629020393944}
+<<<<<<< HEAD
   m_Layer: 0
+=======
+  m_Layer: 16
+>>>>>>> c570470e887d8b8be62347ffc0b9850b821166e3
   m_Name: Fx_OilTrailHIGH_Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +43,11 @@ GameObject:
   - component: {fileID: 33169364479078838}
   - component: {fileID: 23725193622708594}
   - component: {fileID: 82441802072143426}
+<<<<<<< HEAD
   m_Layer: 0
+=======
+  m_Layer: 16
+>>>>>>> c570470e887d8b8be62347ffc0b9850b821166e3
   m_Name: fire wowwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +63,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4723686071038740}
   - component: {fileID: 108806503954429192}
+<<<<<<< HEAD
   m_Layer: 0
+=======
+  m_Layer: 16
+>>>>>>> c570470e887d8b8be62347ffc0b9850b821166e3
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,34 +80,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1482580355773022}
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.7071068, y: -0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.38, y: -0.32, z: 5.79}
+=======
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.17, y: -0.01, z: 5.79}
+>>>>>>> c570470e887d8b8be62347ffc0b9850b821166e3
   m_LocalScale: {x: 1, y: 1, z: 0.66504}
   m_Children: []
   m_Father: {fileID: 4367584648721894}
   m_RootOrder: 0
+<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+>>>>>>> c570470e887d8b8be62347ffc0b9850b821166e3
 --- !u!4 &4367584648721894
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1537358477389758}
+<<<<<<< HEAD
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 5.468895, y: 87.11, z: -0.03}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+=======
+  m_LocalRotation: {x: -0.5735764, y: 0, z: 0, w: 0.8191521}
+  m_LocalPosition: {x: 0, y: 2.3, z: -2.3}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+>>>>>>> c570470e887d8b8be62347ffc0b9850b821166e3
   m_Children:
   - {fileID: 4137148846355938}
   - {fileID: 4723686071038740}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+<<<<<<< HEAD
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_LocalEulerAnglesHint: {x: -70, y: 0, z: 0}
+>>>>>>> c570470e887d8b8be62347ffc0b9850b821166e3
 --- !u!4 &4723686071038740
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1975296268438790}
+<<<<<<< HEAD
   m_LocalRotation: {x: 0.7071068, y: -0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.91889477, y: 0.60999966, z: 4.0095296}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -103,6 +135,15 @@ Transform:
   m_Father: {fileID: 4367584648721894}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.9, y: 0.51, z: 6.34}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_Children: []
+  m_Father: {fileID: 4367584648721894}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+>>>>>>> c570470e887d8b8be62347ffc0b9850b821166e3
 --- !u!23 &23725193622708594
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -249,9 +290,15 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
+<<<<<<< HEAD
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 3
   m_Range: 5
+=======
+  m_Color: {r: 0.7924528, g: 0.49404642, b: 0.2878248, a: 1}
+  m_Intensity: 3
+  m_Range: 6
+>>>>>>> c570470e887d8b8be62347ffc0b9850b821166e3
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -268,7 +315,11 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
+<<<<<<< HEAD
     m_Bits: 4294967295
+=======
+    m_Bits: 57655
+>>>>>>> c570470e887d8b8be62347ffc0b9850b821166e3
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
@@ -525,8 +576,13 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
+<<<<<<< HEAD
       scalar: 2
       minScalar: 1
+=======
+      scalar: 0.5
+      minScalar: 0.5
+>>>>>>> c570470e887d8b8be62347ffc0b9850b821166e3
       maxCurve:
         serializedVersion: 2
         m_Curve:

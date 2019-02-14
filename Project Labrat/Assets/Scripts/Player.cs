@@ -68,19 +68,26 @@ public class Player : MonoBehaviour, IMoveable
         if (Input.GetAxisRaw("Vertical") == 1 || buttonHeld == ButtonDir.Forward)
         {
             GoForward();
-            audiosource.PlayOneShot(MusicSource);
+            if(!audiosource.isPlaying)
+                            audiosource.PlayOneShot(MusicSource);
         }
         else if (Input.GetAxisRaw("Vertical") == -1 || buttonHeld == ButtonDir.Backward)
         {
             GoBackward();
+            if (!audiosource.isPlaying)
+                audiosource.PlayOneShot(MusicSource);
         }
         else if (Input.GetAxisRaw("Horizontal") == -1 || buttonHeld == ButtonDir.Left)
         {
             GoLeft();
+            if (!audiosource.isPlaying)
+                audiosource.PlayOneShot(MusicSource);
         }
         else if (Input.GetAxisRaw("Horizontal") == 1 || buttonHeld == ButtonDir.Right)
         {
             GoRight();
+            if (!audiosource.isPlaying)
+                audiosource.PlayOneShot(MusicSource);
         }
 
         if (!moving)
