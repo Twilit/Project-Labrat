@@ -14,14 +14,13 @@ public class EndMenuScoreScript : MonoBehaviour {
         score = CoinScript.coins;
         levelsLoaded = Exit.levelsCompleted;
 
-        TotalCoins.text = "Score: " + score*10 + levelsLoaded*50;
+        TotalCoins.text = "Score: " + (int)(score*10 + levelsLoaded*50);
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-        score = CoinScript.coins;
-        levelsLoaded = Exit.levelsCompleted;
+
     }
     
     
