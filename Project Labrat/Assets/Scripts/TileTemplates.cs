@@ -43,7 +43,7 @@ public class TileTemplates : MonoBehaviour
         {
             if (!exitSpawned)
             {
-                if (tiles.Count > 60)
+                if (tiles.Count > 60 && (tiles[tiles.Count - 1].tag != "Closed"))
                 {
                     StartGame();
                     print("start; number of tiles: " + tiles.Count);
