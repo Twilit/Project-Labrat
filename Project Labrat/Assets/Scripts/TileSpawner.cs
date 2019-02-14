@@ -102,7 +102,7 @@ public class TileSpawner : MonoBehaviour
             GameObject sawblade = Instantiate(templates.sawblade, transform.position, Quaternion.identity);
         }
 
-        int t = Random.Range(0, 8);
+        int t = Random.Range(0, 2);
 
         if (tile.tag == "TB")
         {         
@@ -111,10 +111,20 @@ public class TileSpawner : MonoBehaviour
                 GameObject torch = Instantiate(templates.torch, transform.position, Quaternion.Euler(0, -90, 0));
                 torch.transform.GetChild(0).localPosition = new Vector3(0, 3, -3.5f);
             }
+            else if (t == 1)
+            {
+                GameObject torch = Instantiate(templates.torch, transform.position, Quaternion.Euler(0, 90, 0));
+                torch.transform.GetChild(0).localPosition = new Vector3(0, 3, -3.5f);
+            }
         }
         else if (tile.tag == "LR")
         {
             if (t == 0)
+            {
+                GameObject torch = Instantiate(templates.torch, transform.position, Quaternion.Euler(0, 0, 0));
+                torch.transform.GetChild(0).localPosition = new Vector3(0, 3, -3.5f);
+            }
+            else if (t == 1)
             {
                 GameObject torch = Instantiate(templates.torch, transform.position, Quaternion.Euler(0, 180, 0));
                 torch.transform.GetChild(0).localPosition = new Vector3(0, 3, -3.5f);
