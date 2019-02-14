@@ -5,19 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class Exit : MonoBehaviour
 {
+    public static int levelsCompleted;
 
-	void Start ()
+    void Start ()
     {
 		
 	}
 
 	void Update ()
     {
-		
+     
 	}
 
     private void OnTriggerEnter(Collider other)
     {
+        
+        levelsCompleted += 1;
+    
+    
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

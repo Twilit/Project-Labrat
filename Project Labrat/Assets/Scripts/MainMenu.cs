@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
 
 public class MainMenu : MonoBehaviour
 {
+  
+
+    
     public void loadMain()
     {
         print("start");
@@ -20,7 +25,7 @@ public class MainMenu : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
-
+  
 
 
 }
