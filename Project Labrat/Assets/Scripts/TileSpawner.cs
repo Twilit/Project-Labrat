@@ -95,7 +95,7 @@ public class TileSpawner : MonoBehaviour
             GameObject coin = Instantiate(templates.coin, transform.position + new Vector3(Random.Range(-1f, 1f), 0.5f, Random.Range(-1f, 1f)), Quaternion.identity);
         }
 
-        i = Random.Range(0, 8);
+        i = Random.Range(0, 12);
 
         if (i == 0)
         {

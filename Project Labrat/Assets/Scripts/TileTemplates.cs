@@ -28,7 +28,7 @@ public class TileTemplates : MonoBehaviour
 
     void Update()
     {
-        if (tiles.Count > 400)
+        if (tiles.Count > 420)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             print("reload; number of tiles: : " + tiles.Count);
