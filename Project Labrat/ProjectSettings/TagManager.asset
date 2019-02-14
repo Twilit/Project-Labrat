@@ -10,6 +10,12 @@ TagManager:
   - Closed
   - Buttons
   - CoinCounter
+  - TB
+  - LR
+  - T
+  - B
+  - L
+  - R
   layers:
   - Default
   - TransparentFX

@@ -15,6 +15,7 @@ public class TileTemplates : MonoBehaviour
 
     public GameObject coin;
     public GameObject sawblade;
+    public GameObject torch;
     public GameObject exit;
     public GameObject loadingPanel;
     bool exitSpawned;

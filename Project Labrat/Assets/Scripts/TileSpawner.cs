@@ -34,7 +34,7 @@ public class TileSpawner : MonoBehaviour
                     rand = Random.Range(0, templates.northTiles.Length);
                     GameObject northTile = Instantiate(templates.northTiles[rand], transform.position + new Vector3 (0, 0.001f, 0), templates.northTiles[rand].transform.rotation);
                     templates.ResetEndTime();
-                    SpawnItem();
+                    SpawnItem(northTile);
 
                     northTile.transform.parent = map.transform;
                     northTile.transform.localScale = Vector3.one;
@@ -48,7 +48,7 @@ public class TileSpawner : MonoBehaviour
                     rand = Random.Range(0, templates.eastTiles.Length);
                     GameObject eastTile = Instantiate(templates.eastTiles[rand], transform.position + new Vector3(0, -0.001f, 0), templates.eastTiles[rand].transform.rotation);
                     templates.ResetEndTime();
-                    SpawnItem();
+                    SpawnItem(eastTile);
 
                     eastTile.transform.parent = map.transform;
                     eastTile.transform.localScale = Vector3.one;
@@ -61,7 +61,7 @@ public class TileSpawner : MonoBehaviour
                     rand = Random.Range(0, templates.southTiles.Length);
                     GameObject southTile = Instantiate(templates.southTiles[rand], transform.position + new Vector3(0, 0.002f, 0), templates.southTiles[rand].transform.rotation);
                     templates.ResetEndTime();
-                    SpawnItem();
+                    SpawnItem(southTile);
 
                     southTile.transform.parent = map.transform;
                     southTile.transform.localScale = Vector3.one;
@@ -74,7 +74,7 @@ public class TileSpawner : MonoBehaviour
                     rand = Random.Range(0, templates.westTiles.Length);
                     GameObject westTile = Instantiate(templates.westTiles[rand], transform.position + new Vector3(0, -0.002f, 0), templates.westTiles[rand].transform.rotation);
                     templates.ResetEndTime();
-                    SpawnItem();
+                    SpawnItem(westTile);
 
                     westTile.transform.parent = map.transform;
                     westTile.transform.localScale = Vector3.one;
@@ -86,7 +86,7 @@ public class TileSpawner : MonoBehaviour
         }
 	}
 
-    void SpawnItem()
+    void SpawnItem(GameObject tile)
     {
         int i = Random.Range(0, 6);
 
@@ -100,6 +100,53 @@ public class TileSpawner : MonoBehaviour
         if (i == 0)
         {
             GameObject sawblade = Instantiate(templates.sawblade, transform.position, Quaternion.identity);
+        }
+
+        int t = Random.Range(0, 8);
+
+        if (tile.tag == "TB")
+        {         
+            if (t == 0)
+            {
+                GameObject torch = Instantiate(templates.torch, transform.position, Quaternion.Euler(0, -90, 0));
+                torch.transform.GetChild(0).localPosition = new Vector3(0, 3, -3.5f);
+            }
+        }
+        else if (tile.tag == "LR")
+        {
+            if (t == 0)
+            {
+                GameObject torch = Instantiate(templates.torch, transform.position, Quaternion.Euler(0, 180, 0));
+                torch.transform.GetChild(0).localPosition = new Vector3(0, 3, -3.5f);
+            }
+        }
+        else if (tile.tag == "T")
+        {
+            if (t == 0)
+            {
+                GameObject torch = Instantiate(templates.torch, transform.position, Quaternion.Euler(0, 0, 0));
+            }            
+        }
+        else if (tile.tag == "B")
+        {
+            if (t == 0)
+            {
+                GameObject torch = Instantiate(templates.torch, transform.position, Quaternion.Euler(0, 180, 0));
+            }            
+        }
+        else if (tile.tag == "L")
+        {
+            if (t == 0)
+            {
+                GameObject torch = Instantiate(templates.torch, transform.position, Quaternion.Euler(0, -90, 0));
+            }            
+        }
+        else if (tile.tag == "R")
+        {
+            if (t == 0)
+            {
+                GameObject torch = Instantiate(templates.torch, transform.position, Quaternion.Euler(0, 90, 0));
+            }            
         }
     }
 
