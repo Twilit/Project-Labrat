@@ -4,14 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class EndMenuScoreScript : MonoBehaviour {
-    private static int score;
-    private static int levelsLoaded;
+    private static int score = 0;
+    private static int levelsLoaded = 0;
     [SerializeField] Text TotalCoins;
     
 
     // Use this for initialization
     void Start () {
-        TotalCoins.text = "Score " + score*10 + levelsLoaded*50;
+        score = CoinScript.coins;
+        levelsLoaded = Exit.levelsCompleted;
+
+        TotalCoins.text = "Score: " + score*10 + levelsLoaded*50;
 
     }
 	
