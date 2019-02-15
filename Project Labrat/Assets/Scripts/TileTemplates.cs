@@ -15,16 +15,19 @@ public class TileTemplates : MonoBehaviour
 
     public GameObject coin;
     public GameObject sawblade;
+    public GameObject coffin;
     public GameObject torch;
     public GameObject exit;
     public GameObject loadingPanel;
     bool exitSpawned;
     
     public float endtime = 0.5f;
+    public int coffins;
 
     private void Start()
     {
         loadingPanel.SetActive(true);
+        coffins = 0;
     }
 
     void Update()
@@ -67,5 +70,6 @@ public class TileTemplates : MonoBehaviour
         Instantiate(exit, tiles[tiles.Count - 1].transform.position, Quaternion.identity);
         loadingPanel.SetActive(false);
         exitSpawned = true;
+        print(coffins);
     }
 }

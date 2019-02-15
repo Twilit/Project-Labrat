@@ -158,6 +158,41 @@ public class TileSpawner : MonoBehaviour
                 GameObject torch = Instantiate(templates.torch, transform.position, Quaternion.Euler(0, 90, 0));
             }            
         }
+
+        int c = Random.Range(0, 2);
+
+        if (tile.tag == "T")
+        {
+            if (c == 0 && templates.coffins < 4)
+            {
+                GameObject coffin = Instantiate(templates.coffin, transform.position, Quaternion.Euler(0, 0, 0));
+                templates.coffins += 1;
+            }
+        }
+        else if (tile.tag == "B")
+        {
+            if (c == 0 && templates.coffins <= 4)
+            {
+                GameObject coffin = Instantiate(templates.coffin, transform.position, Quaternion.Euler(0, 180, 0));
+                templates.coffins += 1;
+            }
+        }
+        else if (tile.tag == "L")
+        {
+            if (c == 0 && templates.coffins <= 4)
+            {
+                GameObject coffin = Instantiate(templates.coffin, transform.position, Quaternion.Euler(0, -90, 0));
+                templates.coffins += 1;
+            }
+        }
+        else if (tile.tag == "R")
+        {
+            if (c == 0 && templates.coffins <= 4)
+            {
+                GameObject coffin = Instantiate(templates.coffin, transform.position, Quaternion.Euler(0, 90, 0));
+                templates.coffins += 1;
+            }
+        }
     }
 
     void OnTriggerStay(Collider other)

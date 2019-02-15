@@ -3,28 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CoinScript : MonoBehaviour
+public class Coffin : MonoBehaviour
 {
-    Text coinCounter;
+    Text keyCounter;
     GameObject player;
-   
+
     AudioSource audiosource;
 
     public AudioClip MusicSource;
 
+    public static int keys = 0;
 
-    public static int coins = 0;
-
-    void Start()
-    {
-        transform.GetChild(0).gameObject.SetActive(false);
-
-        coinCounter = GameObject.FindGameObjectWithTag("CoinCounter").GetComponent<Text>();
+    void Start ()
+	{
+        keyCounter = GameObject.FindGameObjectWithTag("KeyCounter").GetComponent<Text>();
         player = GameObject.FindGameObjectWithTag("Player");
 
         audiosource = GetComponent<AudioSource>();
-
     }
+	
+	void Update ()
+	{
+		
+	}
 
     private void OnMouseEnter()
     {
@@ -49,13 +50,12 @@ public class CoinScript : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, player.transform.position) < 8)
         {
-
             AudioSource.PlayClipAtPoint(MusicSource, transform.position);
 
-            coins += 1;
-            coinCounter.text = "x " + coins;
+            keys += 1;
+            keyCounter.text = "x " + keys;
 
-            Destroy(gameObject);
+            transform.GetChild(1).localPosition = new Vector3(0.85f, 1.6f, -1.5f);
         }
     }
 }

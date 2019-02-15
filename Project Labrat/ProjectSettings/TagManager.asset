@@ -16,6 +16,7 @@ TagManager:
   - B
   - L
   - R
+  - KeyCounter
   layers:
   - Default
   - TransparentFX
@@ -52,4 +53,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 3722807877
+    locked: 0
+  - name: Text
+    uniqueID: 359216119
     locked: 0
