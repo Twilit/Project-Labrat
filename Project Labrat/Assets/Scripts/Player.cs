@@ -40,6 +40,7 @@ public class Player : MonoBehaviour, IMoveable
 
     public AudioClip MusicSource;
 
+    TileTemplates templates;
 
 	void Start ()
     
@@ -52,15 +53,18 @@ public class Player : MonoBehaviour, IMoveable
 
         audiosource = GetComponent<AudioSource>();
         
-
+        templates = GameObject.FindGameObjectWithTag("Tiles").GetComponent<TileTemplates>();
 
     }
 
    
     void Update ()
-	{      
-        Move();
-        Turn();
+	{
+        if (templates.endtime <= 0)
+        {
+            Move();
+            Turn();
+        }
 	}
 
     public void Move()
