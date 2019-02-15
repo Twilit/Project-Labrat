@@ -12,9 +12,8 @@ public class EndMenuScoreScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         score = CoinScript.coins;
-        levelsLoaded = Exit.levelsCompleted;
 
-        TotalCoins.text = "Score: " + (int)(score*10 + levelsLoaded*50);
+        TotalCoins.text = "Score: " + (int)(score*10);
 
     }
 	

@@ -19,6 +19,7 @@ public class TileTemplates : MonoBehaviour
     public GameObject torch;
     public GameObject exit;
     public GameObject loadingPanel;
+    public GameObject moreKeysText;
     bool exitSpawned;
     
     public float endtime = 0.5f;

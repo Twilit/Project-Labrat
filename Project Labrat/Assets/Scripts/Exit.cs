@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Exit : MonoBehaviour
 {
-    public static int levelsCompleted;
-
+    
+    TileTemplates templates;
+    
     void Start ()
     {
-		
-	}
+        templates = GameObject.FindGameObjectWithTag("Tiles").GetComponent<TileTemplates>();
+    }
 
 	void Update ()
     {
@@ -18,11 +20,24 @@ public class Exit : MonoBehaviour
 	}
 
     private void OnTriggerEnter(Collider other)
+    {        
+        if (Coffin.keys == templates.coffins)
+        {
+            SceneManager.LoadScene(3);
+        }
+        else
+        {
+            StartCoroutine("Prompt");
+        }
+    }
+
+    IEnumerator Prompt()
     {
-        
-        levelsCompleted += 1;
-    
-    
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        templates.moreKeysText.SetActive(true);
+        templates.moreKeysText.GetComponent<Text>().text = "Remaining Keys: " + Coffin.keys;
+
+        yield return new WaitForSeconds(3f);
+
+        templates.moreKeysText.SetActive(false);
     }
 }

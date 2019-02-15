@@ -139,4 +139,6 @@ MonoBehaviour:
   torch: {fileID: 1697341043259154, guid: 1d109d50616b0d647b7aec281aca780e, type: 2}
   exit: {fileID: 1600674709400558, guid: 5ac13b8689f8e0c4e909df500429b2ba, type: 2}
   loadingPanel: {fileID: 0}
+  moreKeysText: {fileID: 0}
   endtime: 0.5
+  coffins: 0

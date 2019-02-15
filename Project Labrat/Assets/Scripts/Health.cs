@@ -15,6 +15,8 @@ public class Health : MonoBehaviour
     [SerializeField]
     private Image content;
 
+    TileTemplates templates;
+
     void Start()
     {
         // this means that crrentHealth will be = to the maxhealth that i have set.
